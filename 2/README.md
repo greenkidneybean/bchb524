@@ -10,7 +10,7 @@ $ python 2.1.py
 gta
 ```
 
-### **Quickstart for 2.2.py:**
+**Quickstart for 2.2.py:**
 ```
 $ python 2.2.py 
 Codon position: 10
@@ -20,6 +20,7 @@ Translation Frame: 2
 ## Method
 - 2.1
     - chains off of the codon string to reverse and use lower case text
+    - prints the chained method
 - 2.2
     - run script by providing a query and a sequence to be searched
     - index of query: uses the `find()` function to search a string for first occurance of query
@@ -44,6 +45,14 @@ Translation Frame: 2
 - converts all input into a string (so can search for numbers in a number sequence)
 - does NOT pass a seach with a different case (e.g. search "ATG" in "agtcgca")
     - look into using re (re.search(query, sequence, re.IGNORECASE))
+
+## What I learned
+- brushed-up on running scripts
+- gotta learn how to run more through tests
+- argparse is nice but seems like overkill sometimes
+- would like to get a system down for docstrings, check [PEP 257](https://www.python.org/dev/peps/pep-0257/)
+- should I be using print statements or returns?
+- what are the standards for script output formats?
 
 ## TODO:
 - not case sensitive
