@@ -1,6 +1,6 @@
 # Exercises
 
-Michael Chambers
+Michael Chambers - DATE-DUE
 
 ## Results
 
@@ -13,3 +13,5 @@ Michael Chambers
 ## Tests
 
 ## What I learned
+
+## TODO:
