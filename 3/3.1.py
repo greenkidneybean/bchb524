@@ -22,7 +22,7 @@ parser = argparse.ArgumentParser(
     description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
 )
 parser.add_argument(
-    "--seq_file", 
+    "--seq_file",
     help="sequence file to be parsed",
     type=str,
     default="anthrax_sasp.nuc"
@@ -42,7 +42,6 @@ else:
 
 # generate output
 
-# Does gene start with Met ("ATG") codon: bool
 # Does gene start with Met ("ATG") codon: bool
 start_index = seq.lower().find("agt")
 if start_index == -1:
