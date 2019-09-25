@@ -1,7 +1,10 @@
-"""Script to identify sequences is a reverse complement palindrome
+"""Script to identify if primer input is a reverse complement palindrome
+
+Input:
+    argument 1 (str): primer sequence
 
 TODO:
-- pipe 6.1.py into 6.2.py
+- pipe 6.1.py into 6.2.py to check for reverse complement palindromes in primers
 """
 
 import re

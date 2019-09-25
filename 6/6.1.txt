@@ -1,0 +1,50 @@
+Exercise 6.1
+
+Michael Chambers - 190923
+
+Results
+
+Input source: https://www.ncbi.nlm.nih.gov/probe/31781543
+
+Input:
+  - forward primer: CAGTTATAAACTGTCCCCATCTTCA
+  - reverse primer: AAAGGAGCCTACAGGGAAGC
+
+Command:
+$ python 6.1.py CAGTTATAAACTGTCCCCATCTTCA AAAGGAGCCTACAGGGAAGC
+
+Output:
+tgaagatggggacagtttataactg
+gcttccctgtaggctccttt
+
+Method
+1. Generate two arguments using sys module
+  - primer_F = forward primer (first argument)
+  - primer_R = reverse primer (second argument)
+2. Check that the two primers are composed of nucleotide characters
+  - will raise error if invalid character found and ends script
+3. Employ the "rev_comp" function to generate reverse complements of the input primers
+
+Strengths
+- Generates reverse complements of two input sequences
+- Adds an error check for invalid nucleotides
+- Documentation header for how to use script
+
+Weaknesses
+- Strictly accepts two arguments
+- Does not identify which input characters are invalid if error raised
+
+Tests
+- Checked strings with invalid nucleotide characters and raises error
+- If passed with a third argument it will not raise an error or generate a reverse complement sequence
+
+What I learned
+- Much more can be done to improve what imput is accepted
+- Didn't know about the NCBI Probe resource online
+
+TODO:
+- argparse
+- handle files?
+- compute primer melting temp?
+- identify the invalid characters
+- handle file input, designed to take multiline input and split?
