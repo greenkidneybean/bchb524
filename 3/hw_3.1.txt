@@ -6,7 +6,7 @@ Results
 
 ```
 $ python 3.1.py --seq_file anthrax_sasp.nuc
-Start index(Met/'ATG'): 3
+Start position(Met/'ATG'): 4
 Translation frame: 1
 Gene length: 177
 Amino acid length: 59

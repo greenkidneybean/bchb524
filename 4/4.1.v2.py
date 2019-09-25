@@ -1,16 +1,7 @@
-#!/usr/bin/env python3
-"""4.1 - Return reverse complement codon
-
-Input: codon (str) - string that consist of only A, C, T, and G charcters
-
-Output: reverse complement of condon
-
-Defaults:
-    input = "ATG"
-"""
+# input data
+seq = 'ATG'
 
 # functions
-
 def rev_seq(seq):
     return seq[::-1]
 
@@ -34,5 +25,4 @@ def rev_codon(codon):
     return rev_comp
 
 # print reverse complement of condon using above functions
-seq = 'ATG'
 print(rev_codon(seq))
