@@ -1,13 +1,14 @@
+"""3 ways to code dna complement
+1. use the previous if statements
+2. use two lists, maybe zip
+3. use a dictionary
+4. codon table?
+"""
+
 # input data
 seq = 'ATGCATTCGTATTTTT'
 
-# 3 ways to code dna complement
-# 1. use the previous if statements
-# 2. use two lists, maybe zip
-# 3. use a dictionary
-# 4. codon table?
-
-# original method
+# method 1
 def rev_seq(seq):
     return seq[::-1]
 def complement_seq(nuc):
@@ -24,24 +25,39 @@ def complement_seq(nuc):
     return comp
 def rev_comp_1(seq):
     rev_comp = ""
-    for i in rev_seq(seq):
+    for i in rev_seq(seq.upper()):
         rev_comp = rev_comp + (complement_seq(i))
     return rev_comp
 
-# two lists
-def rev_comp_3(seq):
-    nuc_list = ['a','t','c','g']
-    trans_list = ['t','a','g','c']
+# method 2
+def rev_comp_2(seq):
+    nuc_list = ['A','T','C','G']
+    trans_list = ['T','A','G','C']
     rev_comp = ""
-    for i in seq[::-1]:
+    for n in seq[::-1].upper():
+        for x,y in zip(nuc_list, trans_list):
+            if x == n:
+                rev_comp += y
+    return rev_comp
 
-
-# dictionary
+# method 3
 def rev_comp_3(seq):
     """Returns the reverse complement using dictionary"""
-    trans_dict = {'a':'t', 't':'a', 'g':'c', 'c':'g'}
+    trans_dict = {'A':'T', 'T':'A', 'G':'C', 'C':'G'}
     rev_comp = ""
-    for i in seq[::-1]:
-        nuc = trans_dict[i.lower()]
+    for i in seq[::-1].upper():
+        nuc = trans_dict[i]
         rev_comp = rev_comp + nuc
     return rev_comp
+
+# method 4
+def rev_comp_4(seq):
+    """Returns the reverse complement of the input codon"""
+    trans_dict = {'A':'T', 'T':'A', 'G':'C', 'C':'G'}
+    return "".join([trans_dict[i.upper()] for i in seq[::-1]])
+
+# print results for functions
+print(f"Method 1: {rev_comp_1(seq)}")
+print(f"Method 2: {rev_comp_2(seq)}")
+print(f"Method 3: {rev_comp_3(seq)}")
+print(f"Method 4: {rev_comp_4(seq)}")
