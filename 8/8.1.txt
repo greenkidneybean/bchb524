@@ -4,15 +4,32 @@ Michael Chambers - 190930
 
 Results
 
+$ python 8.1.py
+Input:    ATGCATTCGTATTTTT
+Method 1: AAAAATACGAATGCAT
+Method 2: AAAAATACGAATGCAT
+Method 3: AAAAATACGAATGCAT
+Method 4: AAAAATACGAATGCAT
+Method 5: AAAAATACGAATGCAT
+Method 6: AAAAATACGAATGCAT
 
 Method
-
+- Method 1: utilize previous functions to reverse sequence and use if statements to generate a reverse complement sequence
+- Method 2: utilizes two lists with complement bases located in the corresponding index, uses index number to extract correct complementing base
+- Method 3: uses a dictionary with the key being the sequence base and the value being the complement base, uses a for loop to work through the input sequence and extract single bases from the sequence to find the corresponding complement base value in the dictionary
+- Method 4: also uses a dictionary with keys being bases in the input sequence and values being the complement base, uses the join attribute of strings to compile a list of complement bases from the reversed input sequence
+- Method 5: similar to method 2 but uses two strings rather than two lists, the corresponding complement base is in the same index position in the second string, index is used to extract the correct complement base
+- Method 6: a nasty one-liner that generates a reverse complement sequence.  This is mostly based off of method 4 but it is not a function.
 
 Strengths
-
+- found a couple of different ways to use conditional statements, strings, lists, and dictionaries to generate a reverse complement sequence
+- found a one-liner solution (but it's gross)
+- I especially like method 4, fairly clean and does the job
 
 Weaknesses
-
+- none of these methods will maintain character case variability in an input sequence (e.g. AtG would become CAT and not CaT)
+- none of the functions check to see if the input characters are valid (should only accept a,c,t, and g)
+  - would be slick if it also acc;;; wildcard/mixed nucleotides (n,)
 
 Tests
 

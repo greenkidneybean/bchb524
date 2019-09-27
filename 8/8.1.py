@@ -1,12 +1,6 @@
-"""3 ways to code dna complement
-1. use the previous if statements
-2. use two lists, maybe zip
-3. use a dictionary
-4. codon table?
-"""
-
 # input data
-seq = 'ATGCATTCGTATTTTT'
+#seq = 'ATGCATTCGTATTTTT'
+seq = 'atgcaataca'
 
 # method 1
 def rev_seq(seq):
