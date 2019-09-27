@@ -56,8 +56,25 @@ def rev_comp_4(seq):
     trans_dict = {'A':'T', 'T':'A', 'G':'C', 'C':'G'}
     return "".join([trans_dict[i.upper()] for i in seq[::-1]])
 
+# method 5
+def rev_comp_5(seq):
+    nuc_list = 'ATCG'
+    trans_list = 'TAGC'
+    rev_comp = ""
+    for nuc in seq.upper()[::-1]:
+        for x,y in enumerate(nuc_list):
+            if y == nuc:
+                rev_comp += trans_list[x]
+    return rev_comp
+
+# method 6
+rev_comp_6 = "".join({'A':'T', 'T':'A', 'G':'C', 'C':'G'}[i] for i in seq.upper()[::-1])
+
 # print results for functions
+print(f"Input:    {seq}")
 print(f"Method 1: {rev_comp_1(seq)}")
 print(f"Method 2: {rev_comp_2(seq)}")
 print(f"Method 3: {rev_comp_3(seq)}")
 print(f"Method 4: {rev_comp_4(seq)}")
+print(f"Method 5: {rev_comp_5(seq)}")
+print(f"Method 6: {rev_comp_6}")

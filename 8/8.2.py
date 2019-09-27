@@ -1,9 +1,3 @@
-"""Questions
-- directly lift code to read .code and .nuc?
-- use enumerate function?
-- split seq into codons using list generator?
-"""
-
 import sys
 
 codon_file = sys.argv[1]
@@ -29,28 +23,22 @@ codons = {}
 init = {}
 n = len(aa)
 
-for i in range(n): # could use enumerate function here
+for i in range(n):
     codon = b1[i] + b2[i] + b3[i]
     codons[codon] = aa[i]
     init[codon] = (st[i] == 'M')
 
 # read sequence file
-seq_file = 'anthrax_sasp.nuc'
-
 file = open(seq_file)
-seq = ""
-for line in file:
-    seq += line.strip()
+seq = "".join(file.read().split())
 file.close()
 
 # translate input sequence using input codon table
-trans = ""
-curr_codon = ""
-for i in range(len(seq)):
-    curr_codon += seq[i]
-    if (i + 1)%3 == 0:
-        trans += codons[curr_codon.upper()]
-        curr_codon = ""
+aaseq = []
+for i in range(0,len(seq), 3):
+    codon = seq[i:i+3]
+    aa = codons[codon]
+    aaseq.append(aa)
 
-print(f"Translation: {trans}")
+print(f"Translation: {''.join(aaseq)}")
 print(f"Valid start codon: {init[seq[:3]]}")

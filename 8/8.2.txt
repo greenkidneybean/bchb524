@@ -1,0 +1,56 @@
+Exercise 8.2
+
+Michael Chambers - 190930
+
+Results
+
+$ python 8.2.py standard.code anthrax_sasp.nuc
+Translation: LSRRRGVMSNQFKEELAKELGFYDVVQKEGWGGIRAKDAGNMVKRAIEIAEQQLMKQNQ*
+Valid start codon: True
+
+$ python 8.2.py bacteria.code anthrax_sasp.nuc
+Translation: LSRRRGVMSNQFKEELAKELGFYDVVQKEGWGGIRAKDAGNMVKRAIEIAEQQLMKQNQ*
+Valid start codon: True
+
+Method
+1. Script takes two arguments at the command line:
+  - codon table (.code)
+  - sequence file (.nuc)
+2. Open codon table, lines are split and stored in a data dictionary, close codon table
+  - 'AAs' - string of amino acids
+  - 'Starts' - string of valid start codons
+  - 'Base1' - string of first nuc in codon
+  - 'Base2' - string of second nuc in codon
+  - 'Base3' - string of third nuc in codon
+3. Build a codon dictionary using strings in the data dictionary
+4. Open sequence file, join lines of file into single string, close sequence file
+5. Translate the input sequence using the codon dictionary
+  - Loop through an index range with intervals of 3
+  - Extract codon from the sequence using index values
+  - Translate codon to an AA using the codon dictionary
+  - Append AA to a list of translated codons from the sequence
+6. Print the translated AA list (all elements joined in string)
+7. Print the boolean state of the first codon being a valid start codon
+
+Strengths
+- handles upper and lower case input sequence files
+- modular input (can easily change codon table and input sequence)
+- identifies if first codon in the sequence is a valid start codon based on the input codon table
+- directly incorporates code provided through the lectures
+
+Weaknesses
+- if the start codon isn't valid, could cycle through the translated sequence and find the first valid start codon, report that AA position in the sequence, and maybe what AA it is
+- only handles input sequences that are equally divisible by 3
+- input is strict
+  - codon table must be of a specific format
+  - sequence file can only be a single sequence without a header (not a .fasta file)
+
+Tests
+- tried different codon tables (bacteria, yeast, mold)
+- tried input sequences with varying upper and lower case characters
+- tried input sequences with varying lengths not equally divisible by 3 - failed test
+
+What I learned
+- I didn't know about the different codon tables offered by NCBI, and that there are valid start codons other than ATG
+- codon tables come in various formats
+- scripts are highly dependent on their input, how to handle fringe cases of input?
