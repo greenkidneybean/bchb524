@@ -52,5 +52,5 @@ Tests
 
 What I learned
 - I didn't know about the different codon tables offered by NCBI, and that there are valid start codons other than ATG
-- codon tables come in various formats
+- I also didn't know that codon tables come in various formats
 - scripts are highly dependent on their input, how to handle fringe cases of input?
