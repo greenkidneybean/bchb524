@@ -1,6 +1,6 @@
 # input data
 #seq = 'ATGCATTCGTATTTTT'
-seq = 'atgcaataca'
+seq = 'ATGCATTC GTATT TTT'
 
 # method 1
 def rev_seq(seq):

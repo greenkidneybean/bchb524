@@ -29,9 +29,18 @@ Strengths
 Weaknesses
 - none of these methods will maintain character case variability in an input sequence (e.g. AtG would become CAT and not CaT)
 - none of the functions check to see if the input characters are valid (should only accept a,c,t, and g)
-  - would be slick if it also acc;;; wildcard/mixed nucleotides (n,)
+  - would be slick if it also accepted wildcard/mixed nucleotides (R=A,G; V=A,C,G; etc.)
+- cannot handle spaces in the sequence
 
 Tests
-
+- used upper and lower case sequences
+- tried sequences that do not contain ACGT characters - raises KeyError
+- tried sequence with spaces in it - raises KeyError
+  - this could be handled by forcing the input sequence through: "".join(seq.upper().split())
 
 What I learned
+- still difficult to think-of and catch edge cases, so many different ways input could be provided
+  - maybe would be best to raise a simple error that the input is not correct
+- found a way to cram everything into a single line, but it doesn't look all that Pythonic
+- was fun finding new ways to use different data types
+  - could certainly exploit more functions (zip, enumerate) to leverage datatypes and avoid writing nested loops
