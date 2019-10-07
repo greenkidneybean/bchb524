@@ -1,0 +1,40 @@
+Exercise 6.2
+
+Michael Chambers - 190923
+
+Results
+
+Input: TTGAGTAGACGCGTCTACTCAA
+
+Command: $ python 6.2.py TTGAGTAGACGCGTCTACTCAA
+
+Output: True
+
+Method
+1. Generate a single input argument using the sys module
+  - seq = input primer sequence to be checked for reverse complement palindrome
+2. Check that the two primers are composed of valid nucleotide characters
+  - will raise error if invalid character found and ends script
+3. Employs previous "rev_comp" function and adds a "rev_palindrome" function
+  - "rev_palindrome" function divides the input sequence by 2 using flat division (no remainder), then compares the first half of the sequence to the reverse complement of the second half of the sequence
+  - of the first half of the sequence is equal to the second half then the primer contains a reverse palindrome (output=True)
+
+Strengths
+- Able to identify perfect reverse palindromes
+- Does account for odd-length primer input sequences
+- Helpful documentation at head of script to guide use
+
+Weaknesses
+- No sliding window to check for palindromes (they must be prefect)
+  - palindromes could still be present but would not be detected with this script
+- Does not raise helpful error if no argument given
+
+Tests
+- Checked all 4 primer sequences from lec 6, slide 13
+- Tried primers with invalid nucleotides to raise input error
+
+What I learned
+- Much much more can be done to detect palindromes present within input sequence, but this script does detect basic/prefect palindromes in a primer
+
+TODO:
+- pipe 6.1.py into 6.2.py to check for reverse complement palindromes in primers

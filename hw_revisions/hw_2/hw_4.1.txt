@@ -1,0 +1,40 @@
+Exercise 4.1
+
+Michael Chambers - 190916
+
+Results
+INPUT: 
+- codon: ATG
+
+OUTPUT:
+```
+$ python 4.1.py --codon ATG  
+cat
+```
+
+Method
+1. Check for vaild input
+    - codon (str) - defaults to "ATG" if no input given
+2. Checks that input codon consists of only A, C, G, and T (not case sensitive)
+3. Returns reverse complement of input codon using rev_comp function
+    - incorporates translation dictionary
+    - uses the replace function to translate codon, joins characters together, then reverses characters
+
+Strengths
+- checks for valid codon to reverse
+- documentation with default values
+- trims down the reverse complement function from lecture 4, slide 4 to incorporate dictionary of reverse complement values
+    - 
+
+Weaknesses
+- deviating a bit from pre-defined functions
+- does not maintain input case from user, defaults to lower
+- only reverse complement of codon, not an entire sequence (may not be a hard weakness)
+
+Tests
+- values that are not valid codons
+- not case sensitive
+- codons must be of length 3
+
+What I learned
+- could always add more test and cases to accomodate for the biology

@@ -1,20 +1,42 @@
-Exercise ##
+Exercise 9.1
 
 Michael Chambers - 191007
 
 Results
 
+$ python 9.1.py standard.code anthrax_sasp.nuc
+5'3' Frame 1: LSRRRGVMSNQFKEELAKELGFYDVVQKEGWGGIRAKDAGNMVKRAIEIAEQQLMKQNQ*
+5'3' Frame 2: *VDEEVSCQINLKKSLQKS*AFMMLFRKKDGAEFVRKMLVTW*NVL*KLQNSN**NKTS
+5'3' Frame 3: E*TKRCHVKSI*RRACKRARLL*CCSERRMGRNSCERCW*HGETCYRNCRTAINETKPV
+3'5' Frame 1: LLVLFH*LLFCNFYSTFHHVTSIFRTNSAPSFFLNNIIKA*LFCKLFFKLI*HDTSSSTQ
+3'5' Frame 2: YWFCFINCCSAISIARFTMLPASFARIPPHPSF*TTS*KPSSFASSSLN*FDMTPLRLL
+3'5' Frame 3: TGFVSLIAVLQFL*HVSPCYQHLSHEFRPILLSEQHHKSLALLQALL*IDLT*HLFVYS
 
 Method
-
+1. opens input codon table file and converts to a codon dictionary
+2. opens sequence input file and breaks-down to a sequence without spaces
+3. incorporates 4 functions to convert the sequence to an aa sequence for each of the 6 open reading frames
+  - rev_comp - previous function that simply generates a reverse complement of the input sequence
+  - check_wiggle - if an "N" is identified in the third position of a given codon, that n is replaced with A,C,T, or G and places the encoding AA in a new dictionary.  A set of the values in that dictionary are called and if that set is of length one then the encoding AA is returned, otherwise an "X" is returned
+  - check_codon - looks through the generated codons dictionary and returns the appropriate aa.  If that aa is not found then it returns "X"
+  - translate_seq - final function that pulls all three previous functions together to translate the input sequence
 
 Strengths
-
+- is able to accommodate for wiggle if "N" is in the third position
+- can use different codon tables, user can choose which table they'd like to use
+- I think the output is simple yet sufficient to inform the user
 
 Weaknesses
-
+- cannot handle multiple sequences in a given file, just one
+- would be nice to not require a codon table
+- script does not raise a helpful error if a faulty character is found that cannot be translated
 
 Tests
-
+- sequences with varying cases (upper, lower, mixed)
+- sequences that include "N" in various positions
+- input sequence file has gaps and blank lines that are all concatenated together
 
 What I learned
+- this was a tricky exercise, but a great challenge
+- pulled a lot of previous code together, fun to use
+- I definitely feel like I could and should simplify this script, but it does work

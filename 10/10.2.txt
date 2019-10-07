@@ -4,17 +4,35 @@ Michael Chambers - 191007
 
 Results
 
+$ python 10.2.py anthrax_sasp.nuc
+A: 67
+G: 49
+T: 42
+C: 22
 
 Method
-
+1. opens and converts the input sequence file into a string
+2. a nucleotide dictionary is created that iterates through the sequence
+  - each new character gets a new key
+  - if key exists, increases the count by one for that character
+3. final nucleotide dictionary is sorted into a descending list by dictionary value
+4. print statement iterates through the sorted list
 
 Strengths
-
+- is character agnostic, can handle any characters and will count the number of instances
+- does convert sequence to upper case ("A" and "a" would not be distinguished)
+- simple code that accomplishes the assigned task
 
 Weaknesses
-
+- does not check for invalid nucleotide characters (but this can also be seen as a plus)
+- does not distinguish between upper and lower case characters (would be a nice option to add in the future)
+- input must be a sequence file (does not handle direct sequence input)
 
 Tests
-
+- sequences with varying cases (upper and lower mixed)
+- sequences that include different characters (N,X, etc)
+- input sequence file has gaps and blank lines that are all concatenated together
 
 What I learned
+- again, it's turning out to be quite helpful to use snippets from previous scripts, will try to make things as modular as possible in order to incorporate them in future work
+- as always, it's tricky to accommodate for edge cases.  This is accomplishing the minimal task, some error checking may be helpful but I kinda like having the flexibility of input characters that this script provides

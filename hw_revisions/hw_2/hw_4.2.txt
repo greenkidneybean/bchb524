@@ -1,0 +1,49 @@
+# Exercise 4.2
+
+Michael Chambers - 190916
+
+Results
+INPUT: 
+- seq: AAAAAAAAAAAAAAAA
+- num_rep: 4
+
+OUTPUT:
+```
+$ python 4.2.py                              
+Input sequence: AAAAAAAAAAAAAAAA
+Input number of tandem repeats: 4
+List of tandem elements in sequence: ['AAAA', 'AAAA', 'AAAA', 'AAAA']
+Perfect tandem repeats in sequence: True
+```
+
+Method
+1. Check for vaild input for sequence and number of tandem repeats to check for
+    - seq = sequence to search
+    - num_rep = number of tandem repeats to check for in the seq
+2. Generate list of tandem repeats (tand_list) by breaking seq into list of elements with length of num_rep
+3. Check that tand_list is equally divisible by num_rep (if not, drops last element in list)
+4. Boolean check that all elements in tand_list are equal to the first element
+
+Strengths
+- does the job for identifying repeats of various lengths, though repeats must be perfect
+- mild accomodation for checking number of repeats that is not equally divisable by the number of repeats to check for
+- documentation for use with hw defaults
+- verbose print statements through script
+
+Weaknesses
+- this is looking for perfect repeats through the entire sequence
+- would be nice to generate list of repeat sequences that accomodates the end of repeats and then ends search for repeats
+- doesn't really search the sequence for repeats, just divides sequence into elements and does a boolean check 
+
+Tests
+- used sequences of different length that are equally divided by the input number of random repeats
+    - tries to accomodate by droping the last element
+    - this should really walk along the sequence and check all frames of the sequence for repeats
+
+What I learned
+- writing functions from scratch that accomodate exceptions/biology is tricky, looking forward to using Biopython
+
+TODO:
+- count the number of tandem elements in list
+- walk along sequence and check tandem lists within each new frame
+- accomodate for end of repeats and drop that element from tand_list

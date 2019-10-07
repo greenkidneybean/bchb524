@@ -4,17 +4,30 @@ Michael Chambers - 191007
 
 Results
 
+$ python 10.1.py actcttta
+TAAAGAGT
 
 Method
-
+1. script requires a direct sequence input (not a file)
+2. sequence input is reversed and split into a list of upper case characters
+3. the mapping function is used to convert each nucleotide character in the new list to its reverse complement
+4. the reverse complement characters are joined together and printed
 
 Strengths
-
+- compact script that returns a list of characters
+- compact script (gets the job complete in 6 lines)
+- alternative method that uses a list comprehension is commented out, 1 line shorter
+- can handle an "N" character, simpley swaps for the same character
 
 Weaknesses
-
+- does not maintain the case of input characters (converts everything to upper case)
+- does not call an error if improper sequences are provided in the input
+- does not handle an input sequence file
 
 Tests
-
+- different cases of sequence in input
+- tested sequences of variable lengths
 
 What I learned
+- lambda functions can be helpful for little ditty's to add to a script, quick functions
+- nice to write modular functions from previous exercises that can be used for exercises in the future
