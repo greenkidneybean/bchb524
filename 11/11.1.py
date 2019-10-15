@@ -1,20 +1,9 @@
-"""
-Questions:
-- input from command line or prompt
-- break-up by tumor group
-- use other packages (numpy?)
-- pull data file from class website?
-"""
-
 import sys
 import csv
 import math
 
 data_file = sys.argv[1]
 gene = sys.argv[2]
-
-#data_file = 'data.csv'
-#gene = 'R00884'
 
 # functions
 def calc_mean(int_list):
@@ -25,21 +14,39 @@ def calc_stdev(int_list):
     stdev = math.sqrt(sum([(i-mu)**2 for i in int_list])/(len(int_list)))
     return stdev
 
-float(3)
+def tumor_grps(grp, int_list):
+    mean = calc_mean(int_list)
+    stdev = calc_stdev(int_list)
+
+    print(f'Tumor Group: {grp}')
+    print(f'Mean: {mean}')
+    print(f'Standard deviation: {stdev}')
+    print()
 
 # open file and gather gene data
 f = open('data.csv')
 rows = csv.DictReader(f, dialect='excel')
-gene_data = []
+
+tumor_dict = {}
+
 for r in rows:
-    gene_data.append(float(r[gene]))
+    if r['TUMOUR'] in tumor_dict.keys():
+        tumor_dict[r['TUMOUR']].append(float(r[gene]))
+    else:
+        tumor_dict[r['TUMOUR']] = [float(r[gene])]
 f.close()
 
-# compute mean and standard deviation
-mean = calc_mean(gene_data)
-stdev = calc_stdev(gene_data)
-
+# print statements
 print(f'File: {data_file}')
 print(f'Gene: {gene}')
-print(f'Mean: {mean}')
-print(f'Standard deviation: {stdev}')
+print()
+
+# tumor groups
+for key, val_list in tumor_dict.items():
+    tumor_grps(key, val_list)
+
+# all data
+all_values = []
+for i in tumor_dict.values():
+    all_values = all_values + i
+tumor_grps('All Values', all_values)

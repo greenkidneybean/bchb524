@@ -1,0 +1,89 @@
+Exercise 12.1
+
+Michael Chambers - 191015
+
+Results
+
+$ python 12.1.py
+Results for RefSeq Human Proteins File ('human.protein.fasta')
+Most frequent AA: L
+Least frequent AA: W
+Complete AA count:
+A 4483022
+C 1415928
+D 3126834
+E 4777624
+F 2266714
+G 4165441
+H 1737711
+I 2801647
+K 3844605
+L 6425942
+M 1382974
+N 2366382
+P 4177524
+Q 3240476
+R 3691190
+S 5604342
+T 3527664
+V 3844408
+W 771259
+Y 1658945
+
+Results for SwissProt Human Proteins File ('human.protein.fasta')
+Most frequent AA: L
+Least frequent AA: W
+Complete AA count:
+A 798951
+C 261745
+D 539397
+E 808548
+F 415062
+G 748636
+H 298556
+I 493273
+K 651731
+L 1133533
+M 242606
+N 408060
+P 718426
+Q 543126
+R 642163
+S 947708
+T 609793
+V 679215
+W 138732
+Y 303487
+
+To address the issue of similarity between the two files, leucine was found to be the most frequent in both, and tryptophan was found to be the least common.  However, the counts between the two databases are quite different (many many more found in the RefSeq file, which is interestingly smaller than the SwissProt file (implies more proteins in RefSeq?!))
+
+Method
+1. Prior to running script:
+  - Acquisition of data files:
+    - RefSeq: http://edwardslab.bmcb.georgetown.edu/teaching/bchb524/2019/data/human.protein.fasta.gz
+    - SwissProt: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/taxonomic_divisions/uniprot_sprot_human.dat.gz
+  - Unzip the .gz files to acquire .fasta and .dat files
+2. Functions
+  - aa_count - opens the input file and uses the Biopython count_amino_acids() function to count the amino acids and add them to a dictionary, adds keys and values to a final dictionary to be returned at the end of the function
+  - print_results - boring print function to reduce lines down the road, reports the file, max and min aa frequencies, and the entire aa count
+3. Generate aa count dictionaries for both RefSeq and SwissProt, report stats
+
+Strengths
+- relatively quick for parsing large files
+- print statements that identify the most and least frequent aa residues in each database
+- utilizes the Bioython count_amino_acids() function (simplifies life)
+
+Weaknesses
+- requires two preprocessing steps (acquire and unzip input data files)
+  - would be helpful to unzip the files through in the script
+- does not address the similarity question between the two files
+- does not take input from the user (hard-coded, single use))
+
+Tests
+- in writing this script i tried several methods to parse the input files, some of which converted the input file into a dictionary, another generated an index file and computed the aa frequencies from the
+
+What I learned
+- this was a fantastic exercise, i feel like I have a much better understanding of how Python operates with files
+- was a lotta fun to try and find the fastest method to parse the files
+- I'm wondering why the files are so different (differences in the numbers of proteins)
+- Would be really slick to compare proteins directly between the two databases (find a common accession and compare the AA sequences)

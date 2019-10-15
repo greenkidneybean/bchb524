@@ -1,0 +1,50 @@
+Exercise 11.1
+
+Michael Chambers - 191015
+
+Results
+
+$ python 11.1.py data.csv R00884
+File: data.csv
+Gene: R00884
+
+Tumor Group: 1
+Mean: -0.9857073170731704
+Standard deviation: 0.49566217074478863
+
+Tumor Group: 2
+Mean: -1.3325633802816899
+Standard deviation: 0.5565115372149642
+
+Tumor Group: All Values
+Mean: -1.2055892857142856
+Standard deviation: 0.5605238709325446
+
+Method
+1. Input data at the command line
+  - data file in .csv format, with "TOMOUR" column
+  - gene name within file
+2. Functions for mean and standard deviation
+  - calc_mean - calculates the mean value of an input list of ints
+  - calc_stdev - calculates the standard deviation from an input list of ints, uses the math.sqrt() function
+  - tumor_grps - function that breaks-down the values by tumor groups and prints the mean and standard deviation
+
+Strengths
+- accomplishes the task of calculating the mean and standard deviation of the values for a given gene name within the file
+- also reports the group stats as well as the collective stats
+
+Weaknesses
+- cannot compute values for multiple genes, just a single gene
+- may be more useful if output was formatted as a .csv file
+  - then could pipe this script with multiple gene names
+- currently no helpful error messages if proper arguments not provided or no gene name in the file
+- could also provide additional descriptive stats (median, mode, IQR, etc.)
+
+Tests
+- tried calling different gene names in the data.csv file
+- tried calling a gene not within the data.csv file 
+
+What I learned
+- the more modular the functions the more useful they are in the long-run
+- i had forgotten how to calculate the standard deviation, so this was a great review :)
+  - also, kinda fun to write math functions from scratch
