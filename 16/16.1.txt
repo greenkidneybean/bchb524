@@ -1,0 +1,80 @@
+Exercise 16.1
+
+Michael Chambers - 191028
+
+Results
+$ python 16.1.py standard.code anthrax_sasp.nuc
+5'3' Frame 1: LSRRRGVMSNQFKEELAKELGFYDVVQKEGWGGIRAKDAGNMVKRAIEIAEQQLMKQNQ*
+Valid start codon: True
+Nucleotide Frequency:
+A: 67
+G: 49
+T: 42
+C: 22
+
+5'3' Frame 2: *VDEEVSCQINLKKSLQKS*AFMMLFRKKDGAEFVRKMLVTW*NVL*KLQNSN**NKTS
+Valid start codon: False
+Nucleotide Frequency:
+A: 67
+G: 49
+T: 41
+C: 22
+
+5'3' Frame 3: E*TKRCHVKSI*RRACKRARLL*CCSERRMGRNSCERCW*HGETCYRNCRTAINETKPV
+Valid start codon: False
+Nucleotide Frequency:
+A: 67
+G: 49
+T: 40
+C: 22
+
+3'5' Frame 1: LLVLFH*LLFCNFYSTFHHVTSIFRTNSAPSFFLNNIIKA*LFCKLFFKLI*HDTSSSTQ
+Valid start codon: False
+Nucleotide Frequency:
+T: 67
+C: 49
+A: 42
+G: 22
+
+3'5' Frame 2: YWFCFINCCSAISIARFTMLPASFARIPPHPSF*TTS*KPSSFASSSLN*FDMTPLRLL
+Valid start codon: False
+Nucleotide Frequency:
+T: 67
+C: 48
+A: 42
+G: 22
+
+3'5' Frame 3: TGFVSLIAVLQFL*HVSPCYQHLSHEFRPILLSEQHHKSLALLQALL*IDLT*HLFVYS
+Valid start codon: False
+Nucleotide Frequency:
+T: 66
+C: 48
+A: 42
+G: 22
+
+Method
+1. Requires a codon table and sequence file as the input
+2. Utilizes several functions from MyDNAStuff module to generate the following for each of 6 open reading frames for the given sequence:
+  - print the translated sequence, can handle "N" in the sequence
+  - print if the first codon is a valid start codon
+  - print the nucleotide frequencies for the given sequence ORF
+
+Strengths
+- returns useful information for each reading frame of a given sequence
+- got me to organize all my functions and place into a single module
+- script is fairly concise with helpful report generated
+
+Weaknesses
+- still requires a general setup to make a codon_dict, start_dict, and seq object in the script, maybe this could all be called and encoded with my print functions
+- print functions are kinda weird/specialized, but helpful for cutting down lines in the script, though not as modular as using the module functions themselves
+- only takes in a single input sequence
+
+Tests
+- standard.code and anthrax_sasp.nuc as first input
+- tried different codon tables
+- tried adding "N" and "n" to the anthrax sequence file and this worked
+  - caught a bug in my original "codon_wiggle" function that was a pain to fix, but it's better now
+
+What I learned
+- much handier to have a pile of functions rolled into a module, will be fun to modify in the future and make more modular
+- I found some old bugs, pain to deal with but improved a few functions using ".get" for dictionaries
