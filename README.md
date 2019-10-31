@@ -1,7 +1,6 @@
 # BCHB-524 Bioinformatics Computing (Python)
 
 [Data for the course](http://edwardslab.bmcb.georgetown.edu/teaching/bchb524/2019/data/)
-http://edwardslab.bmcb.georgetown.edu/teaching/bchb524/2019/data/)
 
 ## Lecture topics and exercises:
 00. BCHB-524 - Bioinformatics Computing Course Description
