@@ -1,7 +1,4 @@
-# Functions
-def complement_seq(seq):
-        d = {'A':'T', 'T':'A', 'G':'C', 'C':'G', 'N':'N'}
-        return ''.join(map(d.get, seq))
+
 
 class DNASeq:
     def __init__(self,seq="",name=""):
@@ -9,7 +6,17 @@ class DNASeq:
         self.name = name
     def read(self, filename):
         self.seq = ''.join(open(filename).read().split())
-    def reverse(self):
+    def rev(self):
         return self.seq[::-1]
-    def complement(self):
-        return complement_seq(self.seq)
+    def comp(self):
+        d = {'A':'T', 'T':'A', 'G':'C', 'C':'G', 'N':'N'}
+        return ''.join(map(d.get, self.seq))
+    def rev_comp(self):
+        return complement(self.rev)
+    def length(self):
+        return len(self.seq)
+    def freq(self, nuc):
+        return self.seq.count(nuc)
+    def gc(self):
+        gc_sum = self.freq('C') + self.freq('G')
+        return 100 * float(gc_sum)/self.length()
