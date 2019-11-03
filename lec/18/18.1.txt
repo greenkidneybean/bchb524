@@ -1,0 +1,43 @@
+Exercise 18.1
+
+Michael Chambers - 191104
+
+Results
+$ python 18.1.py standard.code anthrax_sasp.nuc
+Frame 1: LSRRRGVMSNQFKEELAKELGFYDVVQKEGWGGIRAKDAGNMVKRAIEIAEQQLMKQNQ*
+Frame 2: *VDEEVSCQINLKKSLQKS*AFMMLFRKKDGAEFVRKMLVTW*NVL*KLQNSN**NKTS
+Frame 3: E*TKRCHVKSI*RRACKRARLL*CCSERRMGRNSCERCW*HGETCYRNCRTAINETKPV
+Frame 4: LVLFH*LLFCNFYSTFHHVTSIFRTNSAPSFFLNNIIKA*LFCKLFFKLI*HDTSSSTQ
+Frame 5: WFCFINCCSAISIARFTMLPASFARIPPHPSF*TTS*KPSSFASSSLN*FDMTPLRLL
+Frame 6: GFVSLIAVLQFL*HVSPCYQHLSHEFRPILLSEQHHKSLALLQALL*IDLT*HLFVYS
+
+Method
+1. Check command line input for codon table and sequence files
+2. Create codons class object from reading the codon table file
+3. Create DNASeq class object from reading the sequence file
+4. Loop through integers the ORFs (1-6) and print the translated sequence for the given ORF
+  - calls the "translate" method in the codons class object
+  - input the the "translate" method uses the "get_frame" method from the DNASeq class object
+
+Strengths
+- Much more efficient use of script space by using classes, reduces the original exercise 9.1 from 83 lines to 13
+- Incorporates exceptions and assertions from lecture 17
+- Can easily call other methods developed in other homeworks
+  - Nucleotide frequency
+  - GC content
+  - Sequence length
+- Can handle "N" at any position in the codon and will call "X" if the codon is ambiguous
+
+Weaknesses
+- Cannot chain methods of the class together because each method returns a string, not a new instance of the class.  This would require a new design for the class but may improve use
+- I'm not crazy about the method to read codon tables (lotta lines) but it works
+- Could improve error reporting within each class
+
+Tests
+- anthrax_susp.nuc - output matches that of exercise 9.1
+- test.nuc - sequence file that contains upper and lower case text with "N"s all over the place
+- checked
+
+What I learned
+- I have never really used classes before.  I'm still wrapping my head around how methods of a class can return a new class object to be manipulated in order to chain methods, but what I've made works for the goals at hand.
+- I'm not fan of the class structure/OOP, but I think it's a slick way to wrap-up a bunch of functions, helpful approach for organizing code
