@@ -40,7 +40,7 @@
 * HW 5
     * 9.1 - Modify DNA translation program (8.2) to translate in each forward and reverse frame, and handle "N" symbols in third position of a codon
     * 10.1 - Compact reverse complement function
-    * 10.2 - Script that computes nucleotide frequencey using a dictionary
+    * 10.2 - Script that computes nucleotide frequency using a dictionary
 * HW 6
     * 11.1 - Read "data.csv" and compute mean, stdev for values of specific gene by group and all together
     * 12.1 - Get AA frequency for all genes in RefSeq and UniProt human proteome files and compare the two
