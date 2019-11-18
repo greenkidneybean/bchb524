@@ -1,0 +1,1053 @@
+BLASTP 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: yeast.aa
+           6,298 sequences; 2,974,038 total letters
+
+
+
+Query= gi|6319267|ref|NP_009350.1| Yal049cp
+
+Length=246
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+gi|6319267|ref|NP_009350.1| Yal049cp                                  508        0.0  
+gi|6320123|ref|NP_010203.1| alpha-ketoisocaproate decarboxylase; ...  26.6       4.2  
+gi|6323814|ref|NP_013885.1| Ymr162cp                                  26.6       4.8  
+gi|6319657|ref|NP_009739.1| dityrosine transporter MFS-MDR; Dtr1p     26.2       5.0  
+gi|6320250|ref|NP_010330.1| TFIIS-like small Pol III subunit C11;...  25.4       5.2  
+gi|6321468|ref|NP_011545.1| Ygr031wp                                  26.2       5.8  
+gi|6323350|ref|NP_013422.1| 103 kD basic protein, catalytic subun...  26.2       6.1  
+gi|6324344|ref|NP_014414.1| 23 kDa mitochondrial inner membrane p...  25.4       7.8  
+
+
+>gi|6319267|ref|NP_009350.1| Yal049cp
+Length=246
+
+ Score = 508 bits (1307),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 246/246 (100%), Positives = 246/246 (100%), Gaps = 0/246 (0%)
+
+Query  1    MASNQPGKCCFEGVCHDGTPKGRREEIFGLDTYAAGSTSPKEKVIVILTDVYGNKFNNVL  60
+            MASNQPGKCCFEGVCHDGTPKGRREEIFGLDTYAAGSTSPKEKVIVILTDVYGNKFNNVL
+Sbjct  1    MASNQPGKCCFEGVCHDGTPKGRREEIFGLDTYAAGSTSPKEKVIVILTDVYGNKFNNVL  60
+
+Query  61   LTADKFASAGYMVFVPDILFGDAISSDKPIDRDAWFQRHSPEVTKKIVDGFMKLLKLEYD  120
+            LTADKFASAGYMVFVPDILFGDAISSDKPIDRDAWFQRHSPEVTKKIVDGFMKLLKLEYD
+Sbjct  61   LTADKFASAGYMVFVPDILFGDAISSDKPIDRDAWFQRHSPEVTKKIVDGFMKLLKLEYD  120
+
+Query  121  PKFIGVVGYCFGAKFAVQHISGDGGLANAAAIAHPSFVSIEEIEAIDSKKPILISAAEED  180
+            PKFIGVVGYCFGAKFAVQHISGDGGLANAAAIAHPSFVSIEEIEAIDSKKPILISAAEED
+Sbjct  121  PKFIGVVGYCFGAKFAVQHISGDGGLANAAAIAHPSFVSIEEIEAIDSKKPILISAAEED  180
+
+Query  181  HIFPANLRHLTEEKLKDNHATYQLDLFSGVAHGFAARGDISIPAVKYAKEKVLLDQIYWF  240
+            HIFPANLRHLTEEKLKDNHATYQLDLFSGVAHGFAARGDISIPAVKYAKEKVLLDQIYWF
+Sbjct  181  HIFPANLRHLTEEKLKDNHATYQLDLFSGVAHGFAARGDISIPAVKYAKEKVLLDQIYWF  240
+
+Query  241  NHFSNV  246
+            NHFSNV
+Sbjct  241  NHFSNV  246
+
+
+>gi|6320123|ref|NP_010203.1| alpha-ketoisocaproate decarboxylase; 
+Thi3p
+Length=609
+
+ Score = 26.6 bits (57),  Expect = 4.2, Method: Compositional matrix adjust.
+ Identities = 13/23 (57%), Positives = 15/23 (65%), Gaps = 4/23 (17%)
+
+Query  125  GVVGY----CFGAKFAVQHISGD  143
+            G VGY    C GA+FAVQ I+ D
+Sbjct  424  GSVGYTMGACLGAEFAVQEINKD  446
+
+
+>gi|6323814|ref|NP_013885.1| Ymr162cp
+Length=1656
+
+ Score = 26.6 bits (57),  Expect = 4.8, Method: Compositional matrix adjust.
+ Identities = 12/34 (35%), Positives = 16/34 (47%), Gaps = 0/34 (0%)
+
+Query  13   GVCHDGTPKGRREEIFGLDTYAAGSTSPKEKVIV  46
+             +CH   PK    E  G D+    S+SP E  +V
+Sbjct  736  ALCHSCLPKKTHNESIGEDSIEYQSSSPDELALV  769
+
+
+>gi|6319657|ref|NP_009739.1| dityrosine transporter MFS-MDR; Dtr1p
+Length=572
+
+ Score = 26.2 bits (56),  Expect = 5.0, Method: Compositional matrix adjust.
+ Identities = 14/38 (37%), Positives = 23/38 (61%), Gaps = 1/38 (3%)
+
+Query  79   LFGDAISSDKPIDRDAWFQRHSPEVTKKIVDGFMKLLK  116
+            LF D I   KP++ DA+FQ + P+  K  +  + K++K
+Sbjct  328  LFPD-IGIRKPVNNDAFFQENFPKPPKAGLTLYWKMIK  364
+
+
+>gi|6320250|ref|NP_010330.1| TFIIS-like small Pol III subunit 
+C11; Rpc11p
+Length=110
+
+ Score = 25.4 bits (54),  Expect = 5.2, Method: Compositional matrix adjust.
+ Identities = 14/45 (31%), Positives = 20/45 (44%), Gaps = 0/45 (0%)
+
+Query  126  VVGYCFGAKFAVQHISGDGGLANAAAIAHPSFVSIEEIEAIDSKK  170
+            ++ +C      +   SGD G+   A  + P    IE IE  D KK
+Sbjct  1    MLSFCPSCNNMLLITSGDSGVYTLACRSCPYEFPIEGIEIYDRKK  45
+
+
+>gi|6321468|ref|NP_011545.1| Ygr031wp
+Length=342
+
+ Score = 26.2 bits (56),  Expect = 5.8, Method: Compositional matrix adjust.
+ Identities = 38/169 (22%), Positives = 65/169 (38%), Gaps = 22/169 (13%)
+
+Query  26   EIFGLDTYAAGSTSPKEKVIVILTDVYGNKFNNVLLTADKFASAGYMVFVPDILFGDAIS  85
+            +I   D    G        I+IL  ++GNK NN  +  +     G  V++ D L     S
+Sbjct  58   DIIKRDAVKTGDEGKPRPPIIILHGLFGNKLNNRSIGRNLNKKLGRDVYLLD-LRNHGSS  116
+
+Query  86   SDKPIDRDAWFQRHSPEVTKKIVDGFMKLLKLEYDPKFIGVVGYCFGAKFAVQHISGDGG  145
+                +        H+ EV  + V  F+   +L  +   I ++G+  G K A+  +  +  
+Sbjct  117  PHSSV--------HNYEVMSEDVKHFITKHELNTNGGPI-IIGHSMGGKVAMMLVLKNPQ  167
+
+Query  146  LA-------NAAAIAHPSFVSIEEIEAI-----DSKKPILISAAEEDHI  182
+            L        NA     P+   +E I+A+     D  K I      ++H+
+Sbjct  168  LCSMLVCIENAPVSLRPNAEFVEYIKALMEIVNDKGKTIRTLKQADEHL  216
+
+
+>gi|6323350|ref|NP_013422.1| 103 kD basic protein, catalytic subunit 
+of telomerase; Est2p
+Length=884
+
+ Score = 26.2 bits (56),  Expect = 6.1, Method: Composition-based stats.
+ Identities = 12/38 (32%), Positives = 18/38 (47%), Gaps = 0/38 (0%)
+
+Query  93   DAWFQRHSPEVTKKIVDGFMKLLKLEYDPKFIGVVGYC  130
+            D WF +H+ E   ++   F+  L  +  PK I    YC
+Sbjct  346  DIWFTKHNFENLNQLAICFISWLFRQLIPKIIQTFFYC  383
+
+
+>gi|6324344|ref|NP_014414.1| 23 kDa mitochondrial inner membrane 
+protein; Mas6p
+Length=222
+
+ Score = 25.4 bits (54),  Expect = 7.8, Method: Compositional matrix adjust.
+ Identities = 23/79 (29%), Positives = 34/79 (43%), Gaps = 6/79 (8%)
+
+Query  140  ISGDGGLANAAAIAHPSFVSIEEIEAIDSKKPILISAAEEDHIFPANLRHLTEEKLKDNH  199
+            ISG GG+    A  HP     + +E +D ++  L S      + P+  R  T++      
+Sbjct  45   ISGPGGMHVDTARLHPLAGLDKGVEYLDLEEEQLSSLEGSQGLIPS--RGWTDDLCYGTG  102
+
+Query  200  ATYQLDL----FSGVAHGF  214
+            A Y L L    FSG+  G 
+Sbjct  103  AVYLLGLGIGGFSGMMQGL  121
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.138    0.417    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 385751808
+
+
+Query= gi|6319268|ref|NP_009351.1| Yal048cp
+
+Length=662
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+gi|6319268|ref|NP_009351.1| Yal048cp                                  1363       0.0  
+gi|6324239|ref|NP_014309.1| GTP-binding protein of the rho subfam...  40.0       4e-04
+gi|6323642|ref|NP_013713.1| Ypt7p                                     40.0       4e-04
+gi|6323259|ref|NP_013330.1| member of the Rho subfamily of Ras-li...  38.9       8e-04
+gi|6324675|ref|NP_014744.1| ras proto-oncogene homolog; Ras1p         39.7       0.001
+gi|6325423|ref|NP_015491.1| GTP-binding protein of the rho subfam...  38.9       0.001
+gi|6321070|ref|NP_011148.1| GTP-binding protein; Ypt1p                38.5       0.001
+gi|6322073|ref|NP_012148.1| ras homolog--GTP binding protein; Rho3p   38.5       0.002
+gi|6319875|ref|NP_009956.1| GTP-binding protein, ras family; Rsg1p    38.1       0.002
+gi|6321107|ref|NP_011185.1| Ras-like small GTP-binding protein; S...  38.1       0.002
+gi|6324663|ref|NP_014732.1| small GTP-binding protein; geranylger...  37.0       0.004
+gi|6324149|ref|NP_014219.1| Rho family GTPase; Rho5p                  37.0       0.007
+gi|6324236|ref|NP_014306.1| Ypt53p                                    34.7       0.027
+gi|6320869|ref|NP_010948.1| Ypt31p                                    34.7       0.029
+gi|6319516|ref|NP_009598.1| Probable membrane-bound small GTPase;...  33.9       0.075
+gi|6322908|ref|NP_012981.1| ras homolog--GTP binding protein; Rho4p   33.5       0.090
+gi|6321591|ref|NP_011668.1| GTP-binding protein, ras superfamily;...  33.1       0.095
+gi|6324231|ref|NP_014301.1| Small, GTP-binding protein; Ras2p         33.1       0.11 
+gi|6321228|ref|NP_011305.1| Ypt32p                                    32.7       0.14 
+gi|6324025|ref|NP_014095.1| Ypt11p                                    32.7       0.17 
+gi|6324361|ref|NP_014431.1| para-aminobenzoate synthase, PABA syn...  32.3       0.23 
+gi|6321811|ref|NP_011887.1| RAS-related protein; Yhr022cp             31.2       0.37 
+gi|6320842|ref|NP_010921.1| Yer006wp                                  31.6       0.43 
+gi|6319741|ref|NP_009823.1| Probable small GTP-binding protein; Y...  30.4       0.73 
+gi|6325039|ref|NP_015107.1| Bms1p                                     30.4       1.1  
+gi|6323576|ref|NP_013647.1| GTP-binding protein, RAS superfamily;...  29.6       1.3  
+gi|6324785|ref|NP_014854.1| encodes protein with GTP-binding doma...  30.0       1.5  
+gi|6323028|ref|NP_013100.1| Dynamin-related protein; Dnm1p            29.6       1.9  
+gi|6323291|ref|NP_013363.1| Ypt6p                                     28.5       2.3  
+gi|6319894|ref|NP_009975.1| mitochondrial ribosomal protein; Img1p    28.1       2.8  
+gi|6319426|ref|NP_009508.1| 44 kDa core protein of yeast coenzyme...  28.9       3.0  
+gi|6322987|ref|NP_013059.1| Succinate dehydrogenase (ubiquinone) ...  28.5       3.1  
+gi|6324759|ref|NP_014828.1| GTP binding protein, almost identical...  28.1       3.4  
+gi|6323324|ref|NP_013396.1| GTP-binding protein; Gsp1p                27.7       4.2  
+gi|6322957|ref|NP_013030.1| Ykr104wp                                  28.1       4.4  
+gi|6322935|ref|NP_013008.1| nuclear pore protein; Nup133p             28.1       5.0  
+gi|6322853|ref|NP_012926.1| putative GTP-binding protein; similar...  28.1       5.4  
+gi|6319656|ref|NP_009738.1| homolog of Drosophila melanogaster fu...  28.1       6.0  
+gi|6322495|ref|NP_012569.1| DNA-dependent ATPase, homologous to h...  27.3       8.4  
+
+
+>gi|6319268|ref|NP_009351.1| Yal048cp
+Length=662
+
+ Score = 1363 bits (3527),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 662/662 (100%), Positives = 662/662 (100%), Gaps = 0/662 (0%)
+
+Query  1    MTKETIRVVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISIPRDFSSSPTYSPKNTVL  60
+            MTKETIRVVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISIPRDFSSSPTYSPKNTVL
+Sbjct  1    MTKETIRVVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISIPRDFSSSPTYSPKNTVL  60
+
+Query  61   IDTSDSDLIALDHELKSADVIWLVYCDHESYDHVSLFWLPHFRSLGLNIPVILCKNKCDS  120
+            IDTSDSDLIALDHELKSADVIWLVYCDHESYDHVSLFWLPHFRSLGLNIPVILCKNKCDS
+Sbjct  61   IDTSDSDLIALDHELKSADVIWLVYCDHESYDHVSLFWLPHFRSLGLNIPVILCKNKCDS  120
+
+Query  121  ISNVNANAMVVSENSDDDIDTKVEDEEFIPILMEFKEIDTCIKTSAKTQFDLNQAFYLCQ  180
+            ISNVNANAMVVSENSDDDIDTKVEDEEFIPILMEFKEIDTCIKTSAKTQFDLNQAFYLCQ
+Sbjct  121  ISNVNANAMVVSENSDDDIDTKVEDEEFIPILMEFKEIDTCIKTSAKTQFDLNQAFYLCQ  180
+
+Query  181  RAITHPISPLFDAMVGELKPLAVMALKRIFLLSDLNQDSYLDDNEILGLQKKCFNKSIDV  240
+            RAITHPISPLFDAMVGELKPLAVMALKRIFLLSDLNQDSYLDDNEILGLQKKCFNKSIDV
+Sbjct  181  RAITHPISPLFDAMVGELKPLAVMALKRIFLLSDLNQDSYLDDNEILGLQKKCFNKSIDV  240
+
+Query  241  NELNFIKDLLLDISKHDQEYINRKLYVPGKGITKDGFLVLNKIYAERGRHETTWAILRTF  300
+            NELNFIKDLLLDISKHDQEYINRKLYVPGKGITKDGFLVLNKIYAERGRHETTWAILRTF
+Sbjct  241  NELNFIKDLLLDISKHDQEYINRKLYVPGKGITKDGFLVLNKIYAERGRHETTWAILRTF  300
+
+Query  301  HYTDSLCINDKILHPRLVVPDTSSVELSPKGYRFLVDIFLKFDIDNDGGLNNQELHRLFK  360
+            HYTDSLCINDKILHPRLVVPDTSSVELSPKGYRFLVDIFLKFDIDNDGGLNNQELHRLFK
+Sbjct  301  HYTDSLCINDKILHPRLVVPDTSSVELSPKGYRFLVDIFLKFDIDNDGGLNNQELHRLFK  360
+
+Query  361  CTPGLPKLWTSTNFPFSTVVNNKGCITLQGWLAQWSMTTFLNYSTTTAYLVYFGFQEDAR  420
+            CTPGLPKLWTSTNFPFSTVVNNKGCITLQGWLAQWSMTTFLNYSTTTAYLVYFGFQEDAR
+Sbjct  361  CTPGLPKLWTSTNFPFSTVVNNKGCITLQGWLAQWSMTTFLNYSTTTAYLVYFGFQEDAR  420
+
+Query  421  LALQVTKPRKMRRRSGKLYRSNINDRKVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPT  480
+            LALQVTKPRKMRRRSGKLYRSNINDRKVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPT
+Sbjct  421  LALQVTKPRKMRRRSGKLYRSNINDRKVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPT  480
+
+Query  481  IKPRIAVNSLELKGGKQYYLILQELGEQEYAILENKDKLKECDVICLTYDSSDPESFSYL  540
+            IKPRIAVNSLELKGGKQYYLILQELGEQEYAILENKDKLKECDVICLTYDSSDPESFSYL
+Sbjct  481  IKPRIAVNSLELKGGKQYYLILQELGEQEYAILENKDKLKECDVICLTYDSSDPESFSYL  540
+
+Query  541  VSLLDKFTHLQDLPLVFVASKADLDKQQQRCQIQPDELADELFVNHPLHISSRWLSSLNE  600
+            VSLLDKFTHLQDLPLVFVASKADLDKQQQRCQIQPDELADELFVNHPLHISSRWLSSLNE
+Sbjct  541  VSLLDKFTHLQDLPLVFVASKADLDKQQQRCQIQPDELADELFVNHPLHISSRWLSSLNE  600
+
+Query  601  LFIKITEAALDPGKNTPGLPEETAAKDVDYRQTALIFGSTVGFVALCSFTLMKLFKSSKF  660
+            LFIKITEAALDPGKNTPGLPEETAAKDVDYRQTALIFGSTVGFVALCSFTLMKLFKSSKF
+Sbjct  601  LFIKITEAALDPGKNTPGLPEETAAKDVDYRQTALIFGSTVGFVALCSFTLMKLFKSSKF  660
+
+Query  661  SK  662
+            SK
+Sbjct  661  SK  662
+
+
+>gi|6324239|ref|NP_014309.1| GTP-binding protein of the rho subfamily; 
+Rho2p
+Length=192
+
+ Score = 40.0 bits (92),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 36/131 (27%), Positives = 58/131 (44%), Gaps = 10/131 (8%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGEQEYAI  512
+            +IG   CGK+SLL  F    F E+Y PT+     V    + G K    +    G++EY  
+Sbjct  12   IIGDGACGKTSLLYVFTLGKFPEQYHPTVFENY-VTDCRVDGIKVSLTLWDTAGQEEYER  70
+
+Query  513  LENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFT-----HLQDLPLVFVASKADLDKQ  567
+            L      K  D+I + +     ++F  L++   K+      +  D P+V V  K DL ++
+Sbjct  71   LRPFSYSK-ADIILIGFAV---DNFESLINARTKWADEALRYCPDAPIVLVGLKKDLRQE  126
+
+Query  568  QQRCQIQPDEL  578
+                +   DE+
+Sbjct  127  AHFKENATDEM  137
+
+
+>gi|6323642|ref|NP_013713.1| Ypt7p
+Length=208
+
+ Score = 40.0 bits (92),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 38/173 (22%), Positives = 76/173 (44%), Gaps = 9/173 (5%)
+
+Query  446  RKVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQEL  505
+            + +    ++G    GK+SL+  ++   +S++Y  TI        + + G K   + + + 
+Sbjct  6    KNILKVIILGDSGVGKTSLMHRYVNDKYSQQYKATIGADFLTKEVTVDGDKVATMQVWDT  65
+
+Query  506  GEQEYAILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKF-THL-----QDLPLVFVA  559
+              QE          +  D   L YD ++  SF  + S  D+F  H      +  P V + 
+Sbjct  66   AGQERFQSLGVAFYRGADCCVLVYDVTNASSFENIKSWRDEFLVHANVNSPETFPFVILG  125
+
+Query  560  SKADLDKQQQ-RCQIQPDELADELFVNHPLHI-SSRWLSSLNELFIKITEAAL  610
+            +K D ++ ++   +    ELA  L  + PL + S++   +++  F +I  +AL
+Sbjct  126  NKIDAEESKKIVSEKSAQELAKSLG-DIPLFLTSAKNAINVDTAFEEIARSAL  177
+
+
+ Score = 28.1 bits (61),  Expect = 3.1, Method: Compositional matrix adjust.
+ Identities = 11/20 (55%), Positives = 16/20 (80%), Gaps = 0/20 (0%)
+
+Query  3   KETIRVVICGDEGVGKSSLI  22
+           K  ++V+I GD GVGK+SL+
+Sbjct  6   KNILKVIILGDSGVGKTSLM  25
+
+
+>gi|6323259|ref|NP_013330.1| member of the Rho subfamily of Ras-like 
+proteins; Cdc42p
+Length=191
+
+ Score = 38.9 bits (89),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 48/185 (26%), Positives = 76/185 (41%), Gaps = 26/185 (14%)
+
+Query  447  KVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELG  506
+            +   C V+G    GK+ LL ++    F  +Y PT+    AV    + G + Y L L +  
+Sbjct  2    QTLKCVVVGDGAVGKTCLLISYTTNQFPADYVPTVFDNYAVTV--MIGDEPYTLGLFDTA  59
+
+Query  507  EQEYAILENKDKLK-----ECDVICLTYDSSDPESFSYLVS--LLDKFTHLQDLPLVFVA  559
+             Q     E+ D+L+       DV  + +    P SF  +      +   H   +P + V 
+Sbjct  60   GQ-----EDYDRLRPLSYPSTDVFLVCFSVISPPSFENVKEKWFPEVHHHCPGVPCLVVG  114
+
+Query  560  SKADL--DK------QQQRCQI----QPDELADELFVNHPLHISSRWLSSLNELFIKITE  607
+            ++ DL  DK      Q+QR +     Q   LA EL     +  S+     L  +F +   
+Sbjct  115  TQIDLRDDKVIIEKLQRQRLRPITSEQGSRLARELKAVKYVECSALTQRGLKNVFDEAIV  174
+
+Query  608  AALDP  612
+            AAL+P
+Sbjct  175  AALEP  179
+
+
+ Score = 31.6 bits (70),  Expect = 0.21, Method: Compositional matrix adjust.
+ Identities = 14/37 (38%), Positives = 25/37 (68%), Gaps = 4/37 (11%)
+
+Query  4   ETIRVVICGDEGVGKSSLIVSLTK----AEFIPTIQD  36
+           +T++ V+ GD  VGK+ L++S T     A+++PT+ D
+Sbjct  2   QTLKCVVVGDGAVGKTCLLISYTTNQFPADYVPTVFD  38
+
+
+>gi|6324675|ref|NP_014744.1| ras proto-oncogene homolog; Ras1p
+Length=309
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 42/165 (25%), Positives = 73/165 (44%), Gaps = 24/165 (15%)
+
+Query  461  KSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYL--------ILQELGEQEYAI  512
+            KS+L   F+   F +EY PTI+             KQ  +        IL   G++EY+ 
+Sbjct  23   KSALTIQFIQSYFVDEYDPTIEDSYR---------KQVVIDDKVSILDILDTAGQEEYSA  73
+
+Query  513  LENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQD---LPLVFVASKADLDKQQQ  569
+            +  +  ++  +   L Y  +   SF  L+S   +   ++D   +P+V V +K DL+ ++Q
+Sbjct  74   MREQ-YMRTGEGFLLVYSVTSRNSFDELLSYYQQIQRVKDSDYIPVVVVGNKLDLENERQ  132
+
+Query  570  RCQIQPDELADELFVNHP-LHISSRWLSSLNELFIKITEAALDPG  613
+                    LA +L  N P L  S++   +++E F  +     D G
+Sbjct  133  VSYEDGLRLAKQL--NAPFLETSAKQAINVDEAFYSLIRLVRDDG  175
+
+
+>gi|6325423|ref|NP_015491.1| GTP-binding protein of the rho subfamily 
+of ras-like proteins; Rho1p
+Length=209
+
+ Score = 38.9 bits (89),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 42/190 (22%), Positives = 75/190 (39%), Gaps = 36/190 (19%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGEQEYAI  512
+            ++G   CGK+ LL  F    F E Y PT+     V  +E+ G +    +    G+++Y  
+Sbjct  15   IVGDGACGKTCLLIVFSKGQFPEVYVPTVFENY-VADVEVDGRRVELALWDTAGQEDY--  71
+
+Query  513  LENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQD------------LPLVFVAS  560
+                D+L+      L+Y  S+     + + L D   ++Q+            +P++ V  
+Sbjct  72   ----DRLRP-----LSYPDSNVVLICFSIDLPDSLENVQEKWIAEVLHFCQGVPIILVGC  122
+
+Query  561  KADL------------DKQQQRCQIQPDELADELFVNHPLHISSRWLSSLNELFIKITEA  608
+            K DL            + QQ     +   +AD++        S++    + E+F   T A
+Sbjct  123  KVDLRNDPQTIEQLRQEGQQPVTSQEGQSVADQIGATGYYECSAKTGYGVREVFEAATRA  182
+
+Query  609  ALDPGKNTPG  618
+            +L     T G
+Sbjct  183  SLMGKSKTNG  192
+
+
+ Score = 26.9 bits (58),  Expect = 8.7, Method: Composition-based stats.
+ Identities = 11/32 (34%), Positives = 20/32 (63%), Gaps = 4/32 (13%)
+
+Query  7   RVVICGDEGVGKSSLIVSLTKAEF----IPTI  34
+           ++VI GD   GK+ L++  +K +F    +PT+
+Sbjct  12  KLVIVGDGACGKTCLLIVFSKGQFPEVYVPTV  43
+
+
+>gi|6321070|ref|NP_011148.1| GTP-binding protein; Ypt1p
+Length=206
+
+ Score = 38.5 bits (88),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 31/120 (26%), Positives = 56/120 (47%), Gaps = 5/120 (4%)
+
+Query  448  VFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGE  507
+            +F   +IG    GKS LL  F   +++ +Y  TI     + ++EL G      I    G+
+Sbjct  8    LFKLLLIGNSGVGKSCLLLRFSDDTYTNDYISTIGVDFKIKTVELDGKTVKLQIWDTAGQ  67
+
+Query  508  QEYAILENKDKLKECDVICLTYDSSDPESFSYL---VSLLDKFTHLQDLPLVFVASKADL  564
+            + +  + +    +    I + YD +D ESF+ +   +  +D++     L L+ V +K DL
+Sbjct  68   ERFRTITSS-YYRGSHGIIIVYDVTDQESFNGVKMWLQEIDRYATSTVLKLL-VGNKCDL  125
+
+
+>gi|6322073|ref|NP_012148.1| ras homolog--GTP binding protein; 
+Rho3p
+Length=231
+
+ Score = 38.5 bits (88),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 42/152 (28%), Positives = 70/152 (46%), Gaps = 38/152 (25%)
+
+Query  445  DRKVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPR----IAVNSLELKGGKQYYL  500
+            +RK+    ++G   CGK+SLL  F    F E Y PT+       I V+S      K   L
+Sbjct  16   ERKIV---ILGDGACGKTSLLNVFTRGYFPEVYEPTVFENYIHDIFVDS------KHITL  66
+
+Query  501  ILQE-LGEQEYAILENKDKLK-------ECDVICLTYDSSDPESFSYLVSLLDKFT----  548
+             L +  G++E+      D+L+       +C ++C + DS D      L ++ +K+     
+Sbjct  67   SLWDTAGQEEF------DRLRSLSYSDTQCIMLCFSIDSRDS-----LENVQNKWVGEIT  115
+
+Query  549  -HLQDLPLVFVASKADL-DKQQQRCQIQPDEL  578
+             H + + LV VA K DL + + +   I P+ +
+Sbjct  116  DHCEGVKLVLVALKCDLRNNENESNAITPNNI  147
+
+
+ Score = 27.3 bits (59),  Expect = 5.8, Method: Compositional matrix adjust.
+ Identities = 44/194 (23%), Positives = 79/194 (41%), Gaps = 22/194 (11%)
+
+Query  7    RVVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISIPRDFSSSPTYSPKNTVLIDTSDS  66
+            ++VI GD   GK+SL+   T+  F    +  +    I   F  S   +     L DT+  
+Sbjct  18   KIVILGDGACGKTSLLNVFTRGYFPEVYEPTVFENYIHDIFVDSKHITLS---LWDTAGQ  74
+
+Query  67   DLIALDHELKSADVIWLVYC----DHESYDHVSLFWLPHFRSLGLNIPVILCKNKCDSIS  122
+            +       L  +D   ++ C      +S ++V   W+         + ++L   KCD  +
+Sbjct  75   EEFDRLRSLSYSDTQCIMLCFSIDSRDSLENVQNKWVGEITDHCEGVKLVLVALKCDLRN  134
+
+Query  123  NVN-ANAMV---------VSENSDDDIDTKVEDEEFIPI---LMEFKEIDTC--IKTSAK  167
+            N N +NA+          VS ++ ++I++    +  I     L   K+I     ++ SAK
+Sbjct  135  NENESNAITPNNIQQDNSVSNDNGNNINSTSNGKNLISYEEGLAMAKKIGALRYLECSAK  194
+
+Query  168  TQFDLNQAFYLCQR  181
+                +N+AF    R
+Sbjct  195  LNKGVNEAFTEAAR  208
+
+
+>gi|6319875|ref|NP_009956.1| GTP-binding protein, ras family; 
+Rsg1p
+Length=209
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 37/130 (28%), Positives = 56/130 (43%), Gaps = 8/130 (6%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGEQEYAI  512
+            +IG    GK++L   F+   F E Y PTI+       +  K       IL   G+ E ++
+Sbjct  21   LIGARNVGKTTLTVRFVESRFVESYYPTIENEFT-RIIPYKSHDCTLEILDTAGQDEVSL  79
+
+Query  513  LENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHL---QDLPLVFVASKADLDKQQ-  568
+            L N   L     I L Y   +  SF  +  L DK        +LP++ V +KADL +   
+Sbjct  80   L-NIKSLTGVRGIMLCYSIINRASFDLIPILWDKLVDQLGKDNLPVILVGTKADLGRSTK  138
+
+Query  569  --QRCQIQPD  576
+              +RC  + +
+Sbjct  139  GVKRCVTKAE  148
+
+
+>gi|6321107|ref|NP_011185.1| Ras-like small GTP-binding protein; 
+Sec4p
+Length=215
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 42/185 (23%), Positives = 80/185 (43%), Gaps = 14/185 (8%)
+
+Query  435  SGKLYRSNINDRKVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKG  494
+            +GK Y S      +    +IG    GKS LL  F+   F+  +  TI     + ++++ G
+Sbjct  13   NGKSYDS------IMKILLIGDSGVGKSCLLVRFVEDKFNPSFITTIGIDFKIKTVDING  66
+
+Query  495  GKQYYLILQELGEQEYAILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFT-HLQD-  552
+             K    +    G++ +  +          +I L YD +D  +F+ +         H  D 
+Sbjct  67   KKVKLQLWDTAGQERFRTITTAYYRGAMGII-LVYDVTDERTFTNIKQWFKTVNEHANDE  125
+
+Query  553  LPLVFVASKADLDKQQQRCQIQPDELADELFVNHPLHISSRWLSSLNELFI---KITEAA  609
+              L+ V +K+D++ +      Q + LA EL +   +  S++   ++NE+F    K+ +  
+Sbjct  126  AQLLLVGNKSDMETRVVTAD-QGEALAKELGIPF-IESSAKNDDNVNEIFFTLAKLIQEK  183
+
+Query  610  LDPGK  614
+            +D  K
+Sbjct  184  IDSNK  188
+
+
+ Score = 28.9 bits (63),  Expect = 2.2, Method: Compositional matrix adjust.
+ Identities = 11/28 (39%), Positives = 20/28 (71%), Gaps = 0/28 (0%)
+
+Query  6   IRVVICGDEGVGKSSLIVSLTKAEFIPT  33
+           +++++ GD GVGKS L+V   + +F P+
+Sbjct  21  MKILLIGDSGVGKSCLLVRFVEDKFNPS  48
+
+
+>gi|6324663|ref|NP_014732.1| small GTP-binding protein; geranylgeranylated; 
+geranylgeranylation required for membrane association; 
+also involved in endocytosis post vesicle internalization; 
+Vps21p
+Length=210
+
+ Score = 37.0 bits (84),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 39/170 (23%), Positives = 80/170 (47%), Gaps = 27/170 (16%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSFSEEYSPTI-----KPRIAVNSLELKGGKQYYLILQELGE  507
+            ++G+   GKSS++  F+   F+E   PTI       R+ +N   +K     + I    G+
+Sbjct  12   LLGEAAVGKSSIVLRFVSNDFAENKEPTIGAAFLTQRVTINEHTVK-----FEIWDTAGQ  66
+
+Query  508  QEYAILENKDKLKECDVICLTYDSSDPESF----SYLVSLLDKFTHLQDLPLVFVASKAD  563
+            + +A L      +      + YD + P+SF     ++  L ++ +  +D+ +  V +K D
+Sbjct  67   ERFASLAPM-YYRNAQAALVVYDVTKPQSFIKARHWVKELHEQAS--KDIIIALVGNKID  123
+
+Query  564  LDKQQQRCQIQPDE---LADE---LFVNHPLHISSRWLSSLNELFIKITE  607
+            + ++    ++  +E   LA+E   LF       S++   ++N++F+ I E
+Sbjct  124  MLQEGGERKVAREEGEKLAEEKGLLF----FETSAKTGENVNDVFLGIGE  169
+
+
+>gi|6324149|ref|NP_014219.1| Rho family GTPase; Rho5p
+Length=331
+
+ Score = 37.0 bits (84),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 21/52 (40%), Positives = 32/52 (62%), Gaps = 5/52 (10%)
+
+Query  5   TIRVVICGDEGVGKSSLIVSLTK----AEFIPTIQDVLP-PISIPRDFSSSP  51
+           +I+ VI GD  VGK+SL++S T      +++PT+ D     I+IP   +SSP
+Sbjct  3   SIKCVIIGDGAVGKTSLLISYTTNSFPTDYVPTVFDNYSTTIAIPNGTASSP  54
+
+
+ Score = 32.3 bits (72),  Expect = 0.21, Method: Compositional matrix adjust.
+ Identities = 13/35 (37%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  447  KVFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTI  481
+            +   C +IG    GK+SLL ++   SF  +Y PT+
+Sbjct  2    RSIKCVIIGDGAVGKTSLLISYTTNSFPTDYVPTV  36
+
+
+>gi|6324236|ref|NP_014306.1| Ypt53p
+Length=220
+
+ Score = 34.7 bits (78),  Expect = 0.027, Method: Compositional matrix adjust.
+ Identities = 30/131 (23%), Positives = 55/131 (42%), Gaps = 11/131 (8%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGEQEYAI  512
+            ++G+   GKSS++  F+   F E   PTI        +   G    + I    G++ +A 
+Sbjct  17   LLGESAVGKSSIVLRFVSDDFKESKEPTIGAAFLTKRITRDGKVIKFEIWDTAGQERFAP  76
+
+Query  513  LENKDKLKECDVICLTYDSSDPESF----SYLVSLLDKFTHLQDLPLVFVASKADL----  564
+            L      +      + +D ++  SF    +++  L +K  H  D+ +  V +K DL    
+Sbjct  77   LAPM-YYRNAQAALVVFDVTNEGSFYKAQNWVEELHEKVGH--DIVIALVGNKMDLLNND  133
+
+Query  565  DKQQQRCQIQP  575
+            D+ + R    P
+Sbjct  134  DENENRAMKAP  144
+
+
+ Score = 29.6 bits (65),  Expect = 1.2, Method: Compositional matrix adjust.
+ Identities = 17/46 (37%), Positives = 24/46 (52%), Gaps = 4/46 (9%)
+
+Query  5   TIRVVICGDEGVGKSSLIVSLTKAEFI----PTIQDVLPPISIPRD  46
+           TI+VV+ G+  VGKSS+++     +F     PTI        I RD
+Sbjct  12  TIKVVLLGESAVGKSSIVLRFVSDDFKESKEPTIGAAFLTKRITRD  57
+
+
+>gi|6320869|ref|NP_010948.1| Ypt31p
+Length=223
+
+ Score = 34.7 bits (78),  Expect = 0.029, Method: Compositional matrix adjust.
+ Identities = 28/119 (24%), Positives = 49/119 (41%), Gaps = 3/119 (3%)
+
+Query  448  VFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGE  507
+            +F   +IG    GKS+LL  F    F+ +   TI    A  +LE+ G +    I    G+
+Sbjct  13   LFKIVLIGDSGVGKSNLLSRFTKNEFNMDSKSTIGVEFATRTLEIDGKRIKAQIWDTAGQ  72
+
+Query  508  QEYAILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQD--LPLVFVASKADL  564
+            + Y  + +         + + YD S   S+      L +     D  + +  + +K+DL
+Sbjct  73   ERYRAITSAYYRGAVGAL-IVYDISKSSSYENCNHWLSELRENADDNVAVGLIGNKSDL  130
+
+
+ Score = 32.3 bits (72),  Expect = 0.18, Method: Compositional matrix adjust.
+ Identities = 13/24 (54%), Positives = 18/24 (75%), Gaps = 0/24 (0%)
+
+Query  7   RVVICGDEGVGKSSLIVSLTKAEF  30
+           ++V+ GD GVGKS+L+   TK EF
+Sbjct  15  KIVLIGDSGVGKSNLLSRFTKNEF  38
+
+
+>gi|6319516|ref|NP_009598.1| Probable membrane-bound small GTPase; 
+Ybr042cp
+Length=397
+
+ Score = 33.9 bits (76),  Expect = 0.075, Method: Compositional matrix adjust.
+ Identities = 24/88 (27%), Positives = 45/88 (51%), Gaps = 9/88 (10%)
+
+Query  30   FIPTIQDVLPPISIPRDFSSSPTYSPKNTVLIDTSDSDLIALDHELKSADVIWLVYCDHE  89
+             + +I  V+ P ++    ++  +  PK T  +D     +++    LKS  V     C+H+
+Sbjct  62   LVSSILHVVAPSAV--RITTENSSVPKGTFFLDLKKKRILS---HLKSNSV---AICNHQ  113
+
+Query  90   SY-DHVSLFWLPHFRSLGLNIPVILCKN  116
+             Y D + L+WL +  +LG N+ +IL K+
+Sbjct  114  IYTDWIFLWWLAYTSNLGANVFIILKKS  141
+
+
+>gi|6322908|ref|NP_012981.1| ras homolog--GTP binding protein; 
+Rho4p
+Length=291
+
+ Score = 33.5 bits (75),  Expect = 0.090, Method: Compositional matrix adjust.
+ Identities = 40/167 (24%), Positives = 72/167 (43%), Gaps = 29/167 (17%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQE-LGEQEYA  511
+            V+G    GK+ LL +++  +F  +Y PTI      N +E   G+   L L +  G++EY+
+Sbjct  77   VVGDGAVGKTCLLISYVQGTFPTDYIPTIFENYVTN-IEGPNGQIIELALWDTAGQEEYS  135
+
+Query  512  ILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQDL------------PLVFVA  559
+             L             L+Y ++D     Y V       +++DL            P++ V 
+Sbjct  136  RLRP-----------LSYTNADVLMVCYSVGSKTSLKNVEDLWFPEVKHFCPSTPIMLVG  184
+
+Query  560  SKADLDKQQQRCQ-IQP---DELADELFVNHPLHISSRWLSSLNELF  602
+             K+DL +       ++P   + LA  L     +  S+R   +++E+F
+Sbjct  185  LKSDLYEADNLSDLVEPSSAESLAKRLGAFAHIQCSARLKENIDEVF  231
+
+
+ Score = 32.0 bits (71),  Expect = 0.28, Method: Compositional matrix adjust.
+ Identities = 30/124 (24%), Positives = 50/124 (40%), Gaps = 18/124 (15%)
+
+Query  6    IRVVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISIPRDFSS------SPTYSPKNTV  59
+            +++V+ GD  VGK+ L++S         +Q   P   IP  F +       P        
+Sbjct  73   LKIVVVGDGAVGKTCLLISY--------VQGTFPTDYIPTIFENYVTNIEGPNGQIIELA  124
+
+Query  60   LIDTSDSDLIALDHELK--SADVIWLVYC--DHESYDHVSLFWLPHFRSLGLNIPVILCK  115
+            L DT+  +  +    L   +ADV+ + Y      S  +V   W P  +    + P++L  
+Sbjct  125  LWDTAGQEEYSRLRPLSYTNADVLMVCYSVGSKTSLKNVEDLWFPEVKHFCPSTPIMLVG  184
+
+Query  116  NKCD  119
+             K D
+Sbjct  185  LKSD  188
+
+
+>gi|6321591|ref|NP_011668.1| GTP-binding protein, ras superfamily; 
+Rsr1p
+Length=272
+
+ Score = 33.1 bits (74),  Expect = 0.095, Method: Compositional matrix adjust.
+ Identities = 33/149 (22%), Positives = 63/149 (42%), Gaps = 17/149 (11%)
+
+Query  449  FNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGEQ  508
+            +   V+G    GKS L   F+   + + Y PTI+      ++E+        IL   G  
+Sbjct  4    YKLVVLGAGGVGKSCLTVQFVQGVYLDTYDPTIEDSYR-KTIEIDNKVFDLEILDTAGIA  62
+
+Query  509  EYAILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQD---LPLVFVASKADLD  565
+            ++  +     +K      L Y  +D +S   L+ L ++   ++D   +P+V + +KADL 
+Sbjct  63   QFTAMREL-YIKSGMGFLLVYSVTDRQSLEELMELREQVLRIKDSDRVPMVLIGNKADLI  121
+
+Query  566  KQQQRCQIQPDELADELFVNHPLHISSRW  594
+             ++             + V   + +SS+W
+Sbjct  122  NERV------------ISVEEGIEVSSKW  138
+
+
+>gi|6324231|ref|NP_014301.1| Small, GTP-binding protein; Ras2p
+Length=322
+
+ Score = 33.1 bits (74),  Expect = 0.11, Method: Compositional matrix adjust.
+ Identities = 37/165 (22%), Positives = 70/165 (42%), Gaps = 24/165 (15%)
+
+Query  461  KSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYL--------ILQELGEQEYAI  512
+            KS+L        F +EY PTI+             KQ  +        IL   G++EY+ 
+Sbjct  23   KSALTIQLTQSHFVDEYDPTIEDSYR---------KQVVIDDEVSILDILDTAGQEEYSA  73
+
+Query  513  LENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQD---LPLVFVASKADLDKQQQ  569
+            +  +  ++  +   L Y  +   S   L++   +   ++D   +P+V V +K+DL+ ++Q
+Sbjct  74   MR-EQYMRNGEGFLLVYSITSKSSLDELMTYYQQILRVKDTDYVPIVVVGNKSDLENEKQ  132
+
+Query  570  RCQIQPDELADELFVNHP-LHISSRWLSSLNELFIKITEAALDPG  613
+                    +A ++  N P L  S++   ++ E F  +     D G
+Sbjct  133  VSYQDGLNMAKQM--NAPFLETSAKQAINVEEAFYTLARLVRDEG  175
+
+
+>gi|6321228|ref|NP_011305.1| Ypt32p
+Length=222
+
+ Score = 32.7 bits (73),  Expect = 0.14, Method: Compositional matrix adjust.
+ Identities = 28/119 (24%), Positives = 49/119 (41%), Gaps = 3/119 (3%)
+
+Query  448  VFNCFVIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGE  507
+            +F   +IG    GKS+LL  F    F+ E   TI    A  ++E++  K    I    G+
+Sbjct  13   LFKIVLIGDSGVGKSNLLSRFTTDEFNIESKSTIGVEFATRTIEVENKKIKAQIWDTAGQ  72
+
+Query  508  QEYAILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQD--LPLVFVASKADL  564
+            + Y  + +         + + YD S   S+      L +     D  + +  + +K+DL
+Sbjct  73   ERYRAITSAYYRGAVGAL-IVYDISKSSSYENCNHWLTELRENADDNVAVGLIGNKSDL  130
+
+
+ Score = 29.6 bits (65),  Expect = 1.2, Method: Compositional matrix adjust.
+ Identities = 12/24 (50%), Positives = 17/24 (71%), Gaps = 0/24 (0%)
+
+Query  7   RVVICGDEGVGKSSLIVSLTKAEF  30
+           ++V+ GD GVGKS+L+   T  EF
+Sbjct  15  KIVLIGDSGVGKSNLLSRFTTDEF  38
+
+
+>gi|6324025|ref|NP_014095.1| Ypt11p
+Length=355
+
+ Score = 32.7 bits (73),  Expect = 0.17, Method: Compositional matrix adjust.
+ Identities = 34/148 (23%), Positives = 60/148 (41%), Gaps = 9/148 (6%)
+
+Query  455  GKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGEQEYAILE  514
+            G P  G  +  E         E   TI   I  N + +       ++    G++ Y    
+Sbjct  118  GNPNIGDDNNHEMADPNEIVIETRSTIGIDIKTNLVNIDNRFFNVILWDTAGQERYQNAI  177
+
+Query  515  NKDKLKECDVICLTYDSSDPESFS-----YLVSLLDKFTHLQDL---PLVFVASKADLDK  566
+                 K+ + + LTYD ++ +SF      ++V  L+ F+  QDL       V +K DL K
+Sbjct  178  IPSLYKKTNAVILTYDITNAKSFQSCMERWIVQALENFSS-QDLLKARFFLVGNKIDLYK  236
+
+Query  567  QQQRCQIQPDELADELFVNHPLHISSRW  594
+            ++Q       ++  E+ + H + IS  +
+Sbjct  237  ERQVTHYDVVQMVQEMQLKHGIKISGNF  264
+
+
+>gi|6324361|ref|NP_014431.1| para-aminobenzoate synthase, PABA 
+synthase; Abz1p
+Length=787
+
+ Score = 32.3 bits (72),  Expect = 0.23, Method: Compositional matrix adjust.
+ Identities = 25/69 (36%), Positives = 37/69 (54%), Gaps = 7/69 (10%)
+
+Query  186  PISPLFDAMV-GELKPLAVMALKRIFLLSDL--NQDSYLDDNEILGL----QKKCFNKSI  238
+            P+ PLFDA+V G          + + ++S+L  N +  LD+  ILG+    Q  C  +  
+Sbjct  65   PLLPLFDAIVVGPGPGNPNNGAQDMGIISELFENANGKLDEVPILGICLGFQAMCLAQGA  124
+
+Query  239  DVNELNFIK  247
+            DV+ELN IK
+Sbjct  125  DVSELNTIK  133
+
+
+>gi|6321811|ref|NP_011887.1| RAS-related protein; Yhr022cp
+Length=256
+
+ Score = 31.2 bits (69),  Expect = 0.37, Method: Compositional matrix adjust.
+ Identities = 15/56 (27%), Positives = 32/56 (57%), Gaps = 5/56 (9%)
+
+Query  518  KLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQ-----DLPLVFVASKADLDKQQ  568
+            ++++ D I L +DS++  S + L S +    H++     D+P++   +K DLD ++
+Sbjct  145  QIRQSDAIILCFDSTNDSSLASLESYICIIHHVRLECELDIPIIIACTKCDLDSER  200
+
+
+>gi|6320842|ref|NP_010921.1| Yer006wp
+Length=520
+
+ Score = 31.6 bits (70),  Expect = 0.43, Method: Compositional matrix adjust.
+ Identities = 15/35 (43%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  437  KLYRSNINDRKVFNCFVIGKPCCGKSSLLEAFLGR  471
+            K Y +N N ++     VIG P  GKSS++ A L R
+Sbjct  269  KTYSNNSNLKRSIVVGVIGYPNVGKSSVINALLAR  303
+
+
+>gi|6319741|ref|NP_009823.1| Probable small GTP-binding protein; 
+Ypt10p
+Length=218
+
+ Score = 30.4 bits (67),  Expect = 0.73, Method: Compositional matrix adjust.
+ Identities = 12/28 (43%), Positives = 19/28 (68%), Gaps = 0/28 (0%)
+
+Query  5   TIRVVICGDEGVGKSSLIVSLTKAEFIP  32
+           TI+VV+ GD  VGK+S++  L   +F+ 
+Sbjct  23  TIKVVLLGDSSVGKTSIVTRLKSGKFLA  50
+
+
+>gi|6325039|ref|NP_015107.1| Bms1p
+Length=1183
+
+ Score = 30.4 bits (67),  Expect = 1.1, Method: Compositional matrix adjust.
+ Identities = 13/36 (36%), Positives = 21/36 (58%), Gaps = 0/36 (0%)
+
+Query  8    VVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISI  43
+            V + G  G GK++LI SL +     T+ D+  PI++
+Sbjct  72   VAVVGPPGTGKTTLIRSLVRRMTKSTLNDIQGPITV  107
+
+
+>gi|6323576|ref|NP_013647.1| GTP-binding protein, RAS superfamily; 
+Tem1p
+Length=245
+
+ Score = 29.6 bits (65),  Expect = 1.3, Method: Compositional matrix adjust.
+ Identities = 30/141 (21%), Positives = 61/141 (43%), Gaps = 7/141 (5%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSFSEEYSPTIKPRIAVNSLELKGGKQYYLILQELGEQEYAI  512
+            ++G    GK+SL+  ++   + +EY+ T+        + ++     + I+   G++E+  
+Sbjct  25   LVGDAQVGKTSLMVKYVQNIYDKEYTQTLGVNFLKRKVSIRSTDIIFSIMDLGGQREFIN  84
+
+Query  513  LENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQDLPL-VFVASK----ADLDKQ  567
+            +     +    VI   +D + PE+ S +     +   L D  + + V +K     DLD +
+Sbjct  85   MLPIATVGSS-VIIFLFDLTRPETLSSIKEWYRQAYGLNDSAIPILVGTKYDLLIDLDPE  143
+
+Query  568  QQRCQIQPDELADELFVNHPL  588
+             Q  QI    +     +N PL
+Sbjct  144  YQE-QISRTSMKYAQVMNAPL  163
+
+
+>gi|6324785|ref|NP_014854.1| encodes protein with GTP-binding 
+domain related to dynamin; Mgm1p
+Length=902
+
+ Score = 30.0 bits (66),  Expect = 1.5, Method: Compositional matrix adjust.
+ Identities = 12/21 (57%), Positives = 15/21 (71%), Gaps = 0/21 (0%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSF  473
+            VIG    GKSS+LE+ +GR F
+Sbjct  236  VIGSQSSGKSSVLESIVGREF  256
+
+
+ Score = 28.1 bits (61),  Expect = 5.8, Method: Compositional matrix adjust.
+ Identities = 16/65 (25%), Positives = 31/65 (48%), Gaps = 13/65 (20%)
+
+Query  8    VVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISIPRDFSSSPTYSPKNTVLIDTSDSD  67
+            +V+ G +  GKSS++ S+   EF+P   +++             T  P    L++T +S+
+Sbjct  234  IVVIGSQSSGKSSVLESIVGREFLPKGSNMV-------------TRRPIELTLVNTPNSN  280
+
+Query  68   LIALD  72
+             +  D
+Sbjct  281  NVTAD  285
+
+
+>gi|6323028|ref|NP_013100.1| Dynamin-related protein; Dnm1p
+Length=757
+
+ Score = 29.6 bits (65),  Expect = 1.9, Method: Compositional matrix adjust.
+ Identities = 14/36 (39%), Positives = 20/36 (56%), Gaps = 0/36 (0%)
+
+Query  438  LYRSNINDRKVFNCFVIGKPCCGKSSLLEAFLGRSF  473
+            +Y S I+   +    V+G    GKSS+LE  +GR F
+Sbjct  18   MYDSGIDTLDLPILAVVGSQSSGKSSILETLVGRDF  53
+
+
+>gi|6323291|ref|NP_013363.1| Ypt6p
+Length=215
+
+ Score = 28.5 bits (62),  Expect = 2.3, Method: Compositional matrix adjust.
+ Identities = 32/122 (26%), Positives = 55/122 (45%), Gaps = 15/122 (12%)
+
+Query  7    RVVICGDEGVGKSSLIVSLTKAEFIPTIQDVLPPISIPRDFSSSPTYSPKNTV---LIDT  63
+            ++V  G++GVGK+SLI       F    Q      +I  DF S   Y    T+   L DT
+Sbjct  12   KIVFLGEQGVGKTSLITRFMYDTFDDHYQ-----ATIGIDFLSKTMYLDDKTIRLQLWDT  66
+
+Query  64   SDSDLIA--LDHELKSADVIWLVY--CDHESYDHVSLFWLPHFRSLGLNIPVILC--KNK  117
+            +  +     +   ++ + V  +VY     +S++++   W+   ++   +  VILC   NK
+Sbjct  67   AGQERFRSLIPSYIRDSRVAIIVYDITKRKSFEYIDK-WIEDVKNERGDENVILCIVGNK  125
+
+Query  118  CD  119
+             D
+Sbjct  126  SD  127
+
+
+>gi|6319894|ref|NP_009975.1| mitochondrial ribosomal protein; 
+Img1p
+Length=169
+
+ Score = 28.1 bits (61),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 16/46 (35%), Positives = 27/46 (59%), Gaps = 2/46 (4%)
+
+Query  514  ENKDKLKECDVICLTYDSS--DPESFSYLVSLLDKFTHLQDLPLVF  557
+            +NKD+LK  DV+ + YDSS    ++F   +  +D+   +QD  L+ 
+Sbjct  65   KNKDRLKAGDVVRIVYDSSKCSYDTFVGYILSIDRKQLVQDASLLL  110
+
+
+>gi|6319426|ref|NP_009508.1| 44 kDa core protein of yeast coenzyme 
+QH2 cytochrome c reductase; Cor1p
+Length=457
+
+ Score = 28.9 bits (63),  Expect = 3.0, Method: Compositional matrix adjust.
+ Identities = 25/82 (30%), Positives = 36/82 (44%), Gaps = 10/82 (12%)
+
+Query  395  WSMTTFLNYSTTTAYLVYFGFQEDARLALQVTKPRKMRRRS------GKLYRSN--INDR  446
+            W  +T     T    L++F  ++  RL + VT     R +S      G+LY S   +ND 
+Sbjct  328  WGFSTATRNVTMIDDLIHFTLKQWNRLTISVTDTEVERAKSLLKLQLGQLYESGNPVNDA  387
+
+Query  447  KVFNCFVIGKPCCGKSSLLEAF  468
+             +    V+ K    K SL EAF
+Sbjct  388  NLLGAEVLIKGS--KLSLGEAF  407
+
+
+>gi|6322987|ref|NP_013059.1| Succinate dehydrogenase (ubiquinone) 
+iron-sulfur protein subunit; Sdh2p
+Length=266
+
+ Score = 28.5 bits (62),  Expect = 3.1, Method: Compositional matrix adjust.
+ Identities = 29/130 (22%), Positives = 50/130 (38%), Gaps = 17/130 (13%)
+
+Query  245  FIKDLLLDISKHDQEYINRKLYVPGKGITKDGFLVLNKIYAER---GRHETTWAILRTFH  301
+             +KDL+ D++   Q+Y + + Y+      KDG  VL  I   +   G +E       +  
+Sbjct  129  IVKDLVPDLTNFYQQYKSIQPYLQRSSFPKDGTEVLQSIEDRKKLDGLYECILCACCSTS  188
+
+Query  302  YTDSLCINDKILHPRLVVPDTSSVELSPKGYRFLVDIFLKFDIDNDGGLNNQ----ELHR  357
+                    ++ L P +++          + YR+L+D   +        LNN       H 
+Sbjct  189  CPSYWWNQEQYLGPAVLM----------QAYRWLIDSRDQATKTRKAMLNNSMSLYRCHT  238
+
+Query  358  LFKCTPGLPK  367
+            +  CT   PK
+Sbjct  239  IMNCTRTCPK  248
+
+
+>gi|6324759|ref|NP_014828.1| GTP binding protein, almost identical 
+to Gsp1p; Gsp2p
+Length=220
+
+ Score = 28.1 bits (61),  Expect = 3.4, Method: Compositional matrix adjust.
+ Identities = 30/126 (24%), Positives = 48/126 (38%), Gaps = 21/126 (17%)
+
+Query  5    TIRVVICGDEGVGKSSLIVSLTKAEF----IPTIQDVLPPISIPRDFSSSPTYSPKNTVL  60
+            T ++V+ GD G GK++ +      EF    I TI   + P+S   +F           + 
+Sbjct  13   TFKLVLVGDGGTGKTTFVKRHLTGEFEKKYIATIGVEVHPLSFYTNFGE---------IK  63
+
+Query  61   IDTSDSDLIALDHELKSA-------DVIWLVYCDHESYDHVSLFWLPHFRSLGLNIPVIL  113
+             D  D+        L+          +I        +Y +V   W      +  NIP++L
+Sbjct  64   FDVWDTAGQEKFGGLRDGYYINAQCAIIMFDVTSRITYKNVP-NWHRDLVRVCENIPIVL  122
+
+Query  114  CKNKCD  119
+            C NK D
+Sbjct  123  CGNKVD  128
+
+
+>gi|6323324|ref|NP_013396.1| GTP-binding protein; Gsp1p
+Length=219
+
+ Score = 27.7 bits (60),  Expect = 4.2, Method: Compositional matrix adjust.
+ Identities = 30/126 (24%), Positives = 48/126 (38%), Gaps = 21/126 (17%)
+
+Query  5    TIRVVICGDEGVGKSSLIVSLTKAEF----IPTIQDVLPPISIPRDFSSSPTYSPKNTVL  60
+            T ++V+ GD G GK++ +      EF    I TI   + P+S   +F           + 
+Sbjct  12   TFKLVLVGDGGTGKTTFVKRHLTGEFEKKYIATIGVEVHPLSFYTNFGE---------IK  62
+
+Query  61   IDTSDSDLIALDHELKSA-------DVIWLVYCDHESYDHVSLFWLPHFRSLGLNIPVIL  113
+             D  D+        L+          +I        +Y +V   W      +  NIP++L
+Sbjct  63   FDVWDTAGQEKFGGLRDGYYINAQCAIIMFDVTSRITYKNVP-NWHRDLVRVCENIPIVL  121
+
+Query  114  CKNKCD  119
+            C NK D
+Sbjct  122  CGNKVD  127
+
+
+>gi|6322957|ref|NP_013030.1| Ykr104wp
+Length=306
+
+ Score = 28.1 bits (61),  Expect = 4.4, Method: Compositional matrix adjust.
+ Identities = 17/63 (27%), Positives = 32/63 (51%), Gaps = 5/63 (8%)
+
+Query  508  QEYAILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQDLPLVFVASKADLDKQ  567
+            Q Y +L     ++ECD +CL ++   P   S+   L ++F    DL  V  +  ++L + 
+Sbjct  138  QIYGVLSKVGLIEECDELCLIFEQEQPNFSSH--KLRNRFI---DLNTVVKSGGSNLSQG  192
+
+Query  568  QQR  570
+            Q++
+Sbjct  193  QRQ  195
+
+
+>gi|6322935|ref|NP_013008.1| nuclear pore protein; Nup133p
+Length=1157
+
+ Score = 28.1 bits (61),  Expect = 5.0, Method: Compositional matrix adjust.
+ Identities = 23/68 (34%), Positives = 33/68 (49%), Gaps = 7/68 (10%)
+
+Query  178   LCQRAITHPISPLFDAMVGELKPLAVMALKRIFLLSDLNQDSYLDDNEILGLQKKCFNKS  237
+             +C+R     I  +F+ +V ELK   V+ L  +  L      S LDD E L +  +    S
+Sbjct  971   ICKRFKNGSIREVFNILVEELKSTTVVNLSDLVELY-----SMLDDEESLFIPLRLL--S  1023
+
+Query  238   IDVNELNF  245
+             +D N LNF
+Sbjct  1024  VDGNLLNF  1031
+
+
+>gi|6322853|ref|NP_012926.1| putative GTP-binding protein; similar 
+to mammalian Mx proteins; Vps1p
+Length=704
+
+ Score = 28.1 bits (61),  Expect = 5.4, Method: Compositional matrix adjust.
+ Identities = 11/21 (52%), Positives = 14/21 (67%), Gaps = 0/21 (0%)
+
+Query  453  VIGKPCCGKSSLLEAFLGRSF  473
+            V+G    GKSS+LE  +GR F
+Sbjct  34   VVGSQSSGKSSVLENIVGRDF  54
+
+
+>gi|6319656|ref|NP_009738.1| homolog of Drosophila melanogaster 
+fuzzy onions gene; integral protein of the mitochondrial outer 
+membrane which can be isolated as part of a high molecular 
+weight complex; Fzo1p
+Length=855
+
+ Score = 28.1 bits (61),  Expect = 6.0, Method: Compositional matrix adjust.
+ Identities = 15/33 (45%), Positives = 19/33 (58%), Gaps = 2/33 (6%)
+
+Query  7    RVVICGDEGVGKSSLIVSLTKAEFIPTIQDVLP  39
+            +V I GD   GKS+L  SL K   +P  +D LP
+Sbjct  189  KVFITGDVNTGKSALCNSLLKQRLLP--EDQLP  219
+
+
+>gi|6322495|ref|NP_012569.1| DNA-dependent ATPase, homologous 
+to human Cockayne syndrome B gene ERCC6; Rad26p
+Length=1085
+
+ Score = 27.3 bits (59),  Expect = 8.4, Method: Compositional matrix adjust.
+ Identities = 32/134 (24%), Positives = 62/134 (46%), Gaps = 20/134 (15%)
+
+Query  502  LQELGEQEYAILENKDKLKECDVICLTYDSSDPESFSYLVSLLDKFTHLQDLPLVFVASK  561
+            +++  +Q+ A LEN + LK+  V  L+  S + +    + + +  F++LQ L        
+Sbjct  1    MEDKEQQDNAKLENNESLKDLGVNVLSQSSLEEK----IANDVTNFSNLQSL--------  48
+
+Query  562  ADLDKQQQRCQIQPDELADELFVNHPLHISSRWLSSLNELFIKITEAALDPGKNTPGLPE  621
+                 QQ+  +++  + A + +VN   H+ +R L+  N   I + +   D  KN      
+Sbjct  49   -----QQEETRLERSKTALQRYVNKKNHL-TRKLN--NTTRISVKQNLRDQIKNLQSDDI  100
+
+Query  622  ETAAKDVDYRQTAL  635
+            E   KD+D  Q+ +
+Sbjct  101  ERVLKDIDDIQSRI  114
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.137    0.410    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 1341097380
+
+
+  Database: yeast.aa
+    Posted date:  Nov 17, 2019  10:18 PM
+  Number of letters in database: 2,974,038
+  Number of sequences in database:  6,298
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
