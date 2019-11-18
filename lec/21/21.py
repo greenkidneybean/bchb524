@@ -1,21 +1,53 @@
-from Bio import Entrez, SeqIO
-Entrez.email = 'netid@georgetown.edu'
+from Bio import Entrez, SeqIO
+from Bio.Blast import NCBIWWW, NCBIXML
+import os.path
 
-handle = Entrez.esearch(db="nucleotide", term="Cypripedioideae[Orgn]", usehistory="y")
+Entrez.email = ''
 
-result = Entrez.read(handle)
+handle = Entrez.esearch(
+    db='protein',
+    term = '"Homo sapiens"[Organism] AND BRCA1[Gene Name] AND REFSEQ',
+    usehistory='y'
+)
+
+result = Entrez.read(handle)
 handle.close()
-count = int(result["Count"])
-session_cookie = result["WebEnv"]
-query_key = result["QueryKey"]
 
-print(count, session_cookie, query_key)
+id_list = ','.join(result['IdList'])
+handle = Entrez.efetch(
+    db='protein',
+    id=id_list,
+    rettype='gb'
+)
 
-# Get the results in chunks of 100
-chunk_size = 100
+for gi,r in zip(result['IdList'], SeqIO.parse(handle, 'genbank')):
+    print(f'\n*** START: {gi} ***\n')
+    print('GI:', gi)
+    print('Accession:', r.id)
+    print('Description:', r.description)
 
-for chunk_start in range(0,count,chunk_size) :
-  handle = Entrez.efetch(db="nucleotide", rettype="gb", retstart=chunk_start, retmax=chunk_size, webenv=session_cookie, query_key=query_key)
-  for r in SeqIO.parse(handle,"genbank"):
-    print(r.id, r.description)
-    handle.close()
+    print(f"\nBLAST for GI {gi}...\n")
+    result_handle = NCBIWWW.qblast(
+        'blastp',
+        'refseq_protein',
+        gi,
+        expect=1e-5,
+        entrez_query='"Mus musculus"[Organism]'
+    )
+
+    #blast_results = result_handle.read()
+    #result_handle.close()
+
+    # parse the file (was 38)
+    for blast_result in NCBIXML.parse(result_handle):
+        for desc in blast_result.descriptions:
+            print('***Alignment***')
+            print('Sequence:',desc.title)
+            print('Evalue:', desc.e)
+            print()
+
+    file = f'blastp-np-{gi}.xml'
+    save_file = open(file, 'w')
+    save_file.write(result_handle.read())
+    result_handle.close()
+    print(f'*** END {gi} ***')
