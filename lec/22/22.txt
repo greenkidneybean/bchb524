@@ -1,0 +1,41 @@
+Exercise 22.1
+
+Michael Chambers - 191118
+
+Results
+$ python 22.py drosoph-results.xml
+
+<alignment data>
+
+Query: gi|17647949|ref|NP_523931.1| signal recognition particle protein 54k [Drosophila melanogaster]
+Match: gnl|BL_ORD_ID|49 gi|6325345|ref|NP_015413.1| Srp54p [Saccharomyces cerevisiae S288c]
+Score: 1126.0
+Evalue: 1.04165e-151
+Gaps: 18
+
+Method
+1. Input blastp output .xml file against the yeast-ribosome database (drosoph-results.xml)
+2. Iterate through the alignments in the .xml input file
+   - extract the first alignment in the file
+   - if the expected (evalue) score is < 1e-5 then add the entry to a dictionary
+   - print just the highest match based upon evalue
+3. Print the best matching yeast gene with the highest HSP score
+
+Strengths
+- Prints off the highest evalue alignments if the evalue is < 1e-5
+  - Prints an error message if there aren't any good matches
+- Identifies the best match for the yeast ribosome proteins
+- Will only report a best match if there is at least 1 good match found in the alignments
+
+Weaknesses
+- Does not print all of the alignments, just the highest (but simplifies the output)
+- Strictly requires .xml input
+
+Tests
+- Tested with the full drosoph-results.xml
+- Tested against a shortened query file with 1 protein contained within
+- Tested with a query file with no proteins contained within
+
+What I learned
+- Much more fun to play with local Blast databases (faster)
+- Didn't know about HSP scores and the difference from evalues

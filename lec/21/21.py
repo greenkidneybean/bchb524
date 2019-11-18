@@ -1,7 +1,7 @@
 from Bio import Entrez, SeqIO
 from Bio.Blast import NCBIWWW, NCBIXML
 
-Entrez.email = ''
+Entrez.email = 'mjc346@georgetown.edu'
 
 handle = Entrez.esearch(
     db='protein',
@@ -10,9 +10,11 @@ handle = Entrez.esearch(
 )
 
 result = Entrez.read(handle)
+
 handle.close()
 
 id_list = ','.join(result['IdList'])
+
 handle = Entrez.efetch(
     db='protein',
     id=id_list,
@@ -24,8 +26,8 @@ for gi,r in zip(result['IdList'], SeqIO.parse(handle, 'genbank')):
     print('GI:', gi)
     print('Accession:', r.id)
     print('Description:', r.description)
-
     print(f"\nBLAST for GI {gi}...\n")
+
     result_handle = NCBIWWW.qblast(
         'blastp',
         'refseq_protein',
@@ -34,13 +36,9 @@ for gi,r in zip(result['IdList'], SeqIO.parse(handle, 'genbank')):
         entrez_query='"Mus musculus"[Organism]'
     )
 
-    #blast_results = result_handle.read()
-    #result_handle.close()
-
-    # parse the file (was 38)
     for blast_result in NCBIXML.parse(result_handle):
         for desc in blast_result.descriptions:
-            print('***Alignment***')
+            print('*** Alignment ***')
             print('Sequence:',desc.title)
             print('Evalue:', desc.e)
             print()

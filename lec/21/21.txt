@@ -1,0 +1,53 @@
+Exercise 21.1
+
+Michael Chambers - 191118
+
+Results
+$ python 21.py
+
+*** START: 6552299 ***
+
+GI: 6552299
+Accession: NP_009225.1
+Description: breast cancer type 1 susceptibility protein isoform 1 [Homo sapiens]
+
+BLAST for GI 6552299...
+
+*** Alignment ***
+Sequence: ref|NP_033894.3| breast cancer type 1 susceptibility protein homolog [Mus musculus] >ref|XP_030101355.1| breast cancer type 1 susceptibility protein homolog isoform X1 [Mus musculus]
+Evalue: 0.0
+
+<continuation of output data>
+
+Method
+Summary: This script strictly searches the protein database with the search term:
+" "Homo sapiens"[Organism] AND BRCA1[Gene Name] AND REFSEQ "
+1. Entrez esearch in the protein database for the above query and returns a GI id list
+2. Iterates through the GI id list:
+  - Entrez efetch in the protein database for descriptions of the GI id list
+    - Prints some basic result info from the efetch query
+  - NCBI qblast search for each GI id
+    - blastp for refseq proteins
+    - evalue filter of 1e-5
+    - pulls only hits for mouse proteins (entrez_query)
+  - Parse blast search
+    - prints some basic result info from the blast search
+    - writes the search to a .xml file
+
+Strengths
+- Clear print messages for each GI id search and the Blast hits for each
+- Adds a Blast filter of 1e-5 for the returned hits (doesn't have to be parsed in the file)
+  - shortcut for this exercise, but may be useful to get all blast hits down the road
+
+Weaknesses
+- Hardcoded to search for protein sequences in specific databases
+  - would be great to make flags for the search terms for input on the command line
+- Does not use the chunking method
+
+Tests
+- Cut down the iteration loop to a single GI id in order to work through the problem more quickly
+- Tried different searches for other proteins of interest
+
+What I learned
+- I had never done blast queries before using this method to gather evalues, will be incredibly valuable in the future
+- Getting a better sense for how Biopython takes handles and other files to parse, pretty powerful
