@@ -22,6 +22,10 @@
 16. Advanced Python Concepts: Modules
 17. Advanced Python Concepts: Exceptions
 18. Advanced Python Concepts: Object Oriented Programming
+19. Advanced Python Concepts: OOP & Inheritance
+20. Project Descriptions
+21. Using Web-Services: NCBI E-Utilities, Online Blast
+22. Using Local Tools: Blast 
 
 ## Homework
 * HW 1
@@ -50,3 +54,6 @@
 * HW 8
     * 17.1 - Add try/except blocks to DNA and codon_table modules from lec 16
     * 18.1 - Convert modules for DNA seq and codon tables to classes, use classes to translate an AA sequence
+* HW 9
+    * 21.1 - Blast query human gene and find mouse equivalents
+    * 22.1 - Local Blast list of protein sequences against local database
