@@ -49,5 +49,6 @@ Tests
 - Tried different searches for other proteins of interest
 
 What I learned
+- This was an excellent introduction to Eutilities, hopefully we'll be doing more with these through the semester!
 - I had never done blast queries before using this method to gather evalues, will be incredibly valuable in the future
 - Getting a better sense for how Biopython takes handles and other files to parse, pretty powerful

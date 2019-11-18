@@ -39,3 +39,4 @@ Tests
 What I learned
 - Much more fun to play with local Blast databases (faster)
 - Didn't know about HSP scores and the difference from evalues
+- This would be fun to compare homologs between genomes (although probably already donee by someone else :)
