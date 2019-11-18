@@ -1,6 +1,5 @@
 from Bio import Entrez, SeqIO
 from Bio.Blast import NCBIWWW, NCBIXML
-import os.path
 
 Entrez.email = ''
 
