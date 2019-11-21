@@ -26,7 +26,7 @@
 20. Project Descriptions
 21. Using Web-Services: NCBI E-Utilities, Online Blast
 22. Using Local Tools: Blast
-23. Relational Databases: Basic Concepts
+23. Relational Databases: SQL Basic Concepts
 24. Relational Databases: Object Relational Mappers - SQLObject
 
 ## Homework
