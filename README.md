@@ -25,7 +25,9 @@
 19. Advanced Python Concepts: OOP & Inheritance
 20. Project Descriptions
 21. Using Web-Services: NCBI E-Utilities, Online Blast
-22. Using Local Tools: Blast 
+22. Using Local Tools: Blast
+23. Relational Databases: Basic Concepts
+24. Relational Databases: Object Relational Mappers - SQLObject
 
 ## Homework
 * HW 1
@@ -57,3 +59,6 @@
 * HW 9
     * 21.1 - Blast query human gene and find mouse equivalents
     * 22.1 - Local Blast list of protein sequences against local database
+* HW 10
+    * 23.1 - SQL lookup scientific name of user-supplied organism
+    * 24.1 - SQLObject lookup scientific name of user-supplied organism
