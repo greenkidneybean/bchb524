@@ -2,6 +2,8 @@ BCHB524 Final Project
 
 Michael Chambers - 191220
 
+use the "def lines" to identify orthologs
+
 Results
 
 

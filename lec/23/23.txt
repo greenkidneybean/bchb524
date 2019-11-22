@@ -1,0 +1,41 @@
+Exercise 23
+
+Michael Chambers - 191125
+
+Results
+$ python 23.py Durban
+Influenza B virus (B/Durban/55/98) (taxid: 224960)
+Influenza B virus (B/Durban/56/98) (taxid: 224961)
+Sparodon durbanensis (taxid: 119748)
+Influenza B virus (B/Durban/39/98) (taxid: 224981)
+Influenza B virus (B/Durban/43/98) (taxid: 224957)
+Influenza B virus (B/Durban/44/98) (taxid: 224958)
+Influenza B virus (B/Durban/52/98) (taxid: 224959)
+
+Method
+1. Open the 'taxa.db3' database through sqlite3
+2. Binds '%' before and after the input query, query the name table
+3. Select all taxIDs in the name table with matches to the query and add taxID to set
+4. Return an error if the final taxID set is empty
+5. If taxID set is not empty, iterate through the set and print the scientific name from the taxonomy table with a matching taxID
+
+Strengths
+- Uses the 'name' table as a repository for all common names, used for the initial query search
+- Uses the 'taxonomy' table as a final output for scientific names
+- Uses a set of taxIDs to cut redundancy in the print statement
+- Query can be multiple words as long as entire entry is flanked by quotes
+
+Weaknesses
+- Limited search capacity (regex?)
+- Could be a nice addition to show the group of hits in the name table associated with the single scientific name
+- This could be done differently just using the name table and sorting to the scientific name for the nameClass to return the scientific name
+- I think the built-in addition of '%' to the query helps first time users new to sql searches, but may be a hinderance for experienced users that would just add the % to the query itself if they wanted that functionality
+
+Tests
+- searched for entity with multiple entries in the names table and returned single scientific name
+- searched for item not in the database, returns error prompt
+- search can handle multi-word query if entire query is placed in quotes
+
+What I learned
+- tough exercise to pick-up the syntax of sql, I much preferred the object oriented approach in 24
+- wondering if there's a way to do this without for-loops and slice the tables more efficiently

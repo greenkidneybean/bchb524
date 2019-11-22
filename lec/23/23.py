@@ -1,15 +1,28 @@
 import sys
 import sqlite3
 
-organism = '%' + str(sys.argv[1]) + '%'
+query = '%' + str(sys.argv[1]) +'%'
 
 conn = sqlite3.connect('taxa.db3')
-params = [organism]
+params = [query]
 c = conn.cursor()
 c.execute("""
-    select name from name
-    where name like ? and name_class = 'scientific name'
-    limit 10;
+    select * from name
+    where name like ?
 """, params)
-for row in c:
-    print(row[0])
+
+id_set = {row[1] for row in c}
+
+if len(id_set) == 0:
+    print(f"Can't find query: {query}")
+    sys.exit(1)
+
+hits = []
+for i in id_set:
+    params = [i]
+    c.execute("""
+        select * from taxonomy
+        where tax_id = ?
+    """, params)
+    for row in c:
+        print(f'{row[1]} (taxid: {row[0]})')
