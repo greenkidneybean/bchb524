@@ -28,6 +28,7 @@
 22. Using Local Tools: Blast
 23. Relational Databases: SQL Basic Concepts
 24. Relational Databases: Object Relational Mappers - SQLObject
+25. Relational Databases: Object Relational Mappers - SQLObject II
 
 ## Homework
 * HW 1
@@ -62,3 +63,5 @@
 * HW 10
     * 23.1 - SQL lookup scientific name of user-supplied organism
     * 24.1 - SQLObject lookup scientific name of user-supplied organism
+* HW 11
+    * 25.1 - Use SQLObject to find lineage of a user supplied organism name

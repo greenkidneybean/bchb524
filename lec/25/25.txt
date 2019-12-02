@@ -1,0 +1,71 @@
+Exercise 25
+
+Michael Chambers - 191202
+
+Results
+$ python 25.py human
+TaxID best match for query: 9606
+Ascending lineage for: Homo sapiens
+
+Homo sapiens (TaxID: 9606) Rank: species
+Homo (TaxID: 9605) Rank: genus
+Homo/Pan/Gorilla group (TaxID: 207598) Rank: no rank
+Hominidae (TaxID: 9604) Rank: family
+Hominoidea (TaxID: 314295) Rank: superfamily
+Catarrhini (TaxID: 9526) Rank: parvorder
+Simiiformes (TaxID: 314293) Rank: infraorder
+Haplorrhini (TaxID: 376913) Rank: suborder
+Primates (TaxID: 9443) Rank: order
+Euarchontoglires (TaxID: 314146) Rank: superorder
+Eutheria (TaxID: 9347) Rank: no rank
+Theria (TaxID: 32525) Rank: no rank
+Mammalia (TaxID: 40674) Rank: class
+Amniota (TaxID: 32524) Rank: no rank
+Tetrapoda (TaxID: 32523) Rank: no rank
+Sarcopterygii (TaxID: 8287) Rank: no rank
+Euteleostomi (TaxID: 117571) Rank: no rank
+Teleostomi (TaxID: 117570) Rank: no rank
+Gnathostomata (TaxID: 7776) Rank: superclass
+Vertebrata (TaxID: 7742) Rank: no rank
+Craniata (TaxID: 89593) Rank: subphylum
+Chordata (TaxID: 7711) Rank: phylum
+Deuterostomia (TaxID: 33511) Rank: no rank
+Coelomata (TaxID: 33316) Rank: no rank
+Bilateria (TaxID: 33213) Rank: no rank
+Eumetazoa (TaxID: 6072) Rank: no rank
+Metazoa (TaxID: 33208) Rank: kingdom
+Fungi/Metazoa group (TaxID: 33154) Rank: no rank
+Eukaryota (TaxID: 2759) Rank: superkingdom
+cellular organisms (TaxID: 131567) Rank: no rank
+
+Method
+1. Check for input query
+2. Initialize search database using model.py
+3. Use input query to search the Name table and append TaxID hits to id_list
+4. Search through id_list for most frequently occurring TaxID and assign as child
+  - Report the best match TaxID to the query
+  - Report if no hits found in the database
+5. Extract child row from the Taxonomy table
+6. Use while loop to trace back lineage from the child row until parent == root
+7. Print lineage scientific name, TaxID, and rank
+
+Strengths
+- Checks for proper arguments and will report if query not found in database
+- Searches the name database of all existing names for a hit, makes an educated guess based on the top hits for TaxIDs
+- Will search parents all the way back to the root of the tree
+- Builds off of existing model.py module to create search database
+- Able to handle a multi-word query if placed in quotes
+
+Weaknesses
+- Query does not handle a TaxID, only organism names
+- Kinda clunky code, not pretty but does the job
+
+Tests
+- Searched using "human"
+- Searched using "gorilla gorilla gorilla"
+- Searched using a query higher up in rank ("Coelomata")
+- Searched for something not in the database ("cheese")
+
+What I learned
+- Getting better with handling sql objects
+- Handy use of while loop go find all parents of a single child
