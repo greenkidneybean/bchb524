@@ -1,0 +1,140 @@
+BLASTP 2.6.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: drosoph-ribosome.fasta
+           81 sequences; 40,663 total letters
+
+
+
+Query= gi|6321827|ref|NP_011903.1| Rrf1p [Saccharomyces cerevisiae S288c]
+
+Length=230
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  gi|17864452|ref|NP_524819.1| ribosomal protein L12, isoform A [...  20.8    2.8  
+  gi|24762533|ref|NP_726412.1| ribosomal protein L12, isoform B [...  20.8    2.8  
+  gi|24762535|ref|NP_726413.1| ribosomal protein L12, isoform C [...  20.8    2.8  
+  gi|18857967|ref|NP_572424.1| CG10777 [Drosophila melanogaster]      21.2    2.9  
+  gi|18859659|ref|NP_573214.1| CG8611, isoform A [Drosophila mela...  20.4    5.2  
+  gi|28571338|ref|NP_788922.1| CG8611, isoform B [Drosophila mela...  20.4    5.2  
+  gi|21355337|ref|NP_648945.1| CG7728 [Drosophila melanogaster]       19.6    9.8  
+
+
+> gi|17864452|ref|NP_524819.1| ribosomal protein L12, isoform A 
+[Drosophila melanogaster]
+Length=165
+
+ Score = 20.8 bits (42),  Expect = 2.8, Method: Compositional matrix adjust.
+ Identities = 11/30 (37%), Positives = 16/30 (53%), Gaps = 4/30 (13%)
+
+Query  113  FDPKDVKTV----ISGVLAANLNLTPERVP  138
+            FDP +VK V    + G + A  +L P+  P
+Sbjct  5    FDPTEVKLVYLRCVGGEVGATSSLAPKIGP  34
+
+
+> gi|24762533|ref|NP_726412.1| ribosomal protein L12, isoform B 
+[Drosophila melanogaster]
+Length=165
+
+ Score = 20.8 bits (42),  Expect = 2.8, Method: Compositional matrix adjust.
+ Identities = 11/30 (37%), Positives = 16/30 (53%), Gaps = 4/30 (13%)
+
+Query  113  FDPKDVKTV----ISGVLAANLNLTPERVP  138
+            FDP +VK V    + G + A  +L P+  P
+Sbjct  5    FDPTEVKLVYLRCVGGEVGATSSLAPKIGP  34
+
+
+> gi|24762535|ref|NP_726413.1| ribosomal protein L12, isoform C 
+[Drosophila melanogaster]
+Length=165
+
+ Score = 20.8 bits (42),  Expect = 2.8, Method: Compositional matrix adjust.
+ Identities = 11/30 (37%), Positives = 16/30 (53%), Gaps = 4/30 (13%)
+
+Query  113  FDPKDVKTV----ISGVLAANLNLTPERVP  138
+            FDP +VK V    + G + A  +L P+  P
+Sbjct  5    FDPTEVKLVYLRCVGGEVGATSSLAPKIGP  34
+
+
+> gi|18857967|ref|NP_572424.1| CG10777 [Drosophila melanogaster]
+Length=945
+
+ Score = 21.2 bits (43),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 14/45 (31%), Positives = 26/45 (58%), Gaps = 2/45 (4%)
+
+Query  154  ESRLKVAKDLKRVFEE-YKQSSLK-DSLGTIRGSILKEFKSFKKD  196
+            E+++KV   L+ +  E Y  +S+  D     R S+LK+F++ K +
+Sbjct  499  ETKIKVEDILQIIRAEGYNATSIHGDKTQNERDSVLKDFRNGKSN  543
+
+
+> gi|18859659|ref|NP_573214.1| CG8611, isoform A [Drosophila melanogaster]
+Length=974
+
+ Score = 20.4 bits (41),  Expect = 5.2, Method: Compositional matrix adjust.
+ Identities = 9/32 (28%), Positives = 17/32 (53%), Gaps = 0/32 (0%)
+
+Query  76   GNFNPKVFNSLVFKNNRKFTDIATTSLKGKNA  107
+            G  +P+V  S   K ++K +DI  +   G+ +
+Sbjct  220  GGGSPRVKPSSAVKESKKSSDIEDSGESGEES  251
+
+
+> gi|28571338|ref|NP_788922.1| CG8611, isoform B [Drosophila melanogaster]
+Length=975
+
+ Score = 20.4 bits (41),  Expect = 5.2, Method: Compositional matrix adjust.
+ Identities = 9/32 (28%), Positives = 17/32 (53%), Gaps = 0/32 (0%)
+
+Query  76   GNFNPKVFNSLVFKNNRKFTDIATTSLKGKNA  107
+            G  +P+V  S   K ++K +DI  +   G+ +
+Sbjct  221  GGGSPRVKPSSAVKESKKSSDIEDSGESGEES  252
+
+
+> gi|21355337|ref|NP_648945.1| CG7728 [Drosophila melanogaster]
+Length=1159
+
+ Score = 19.6 bits (39),  Expect = 9.8, Method: Compositional matrix adjust.
+ Identities = 5/13 (38%), Positives = 9/13 (69%), Gaps = 0/13 (0%)
+
+Query  11    RPVTVPRLFNRSF  23
+             RP+T+P+   R+ 
+Sbjct  1052  RPLTIPKALQRAL  1064
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.131    0.351    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6185980
+
+
+  Database: drosoph-ribosome.fasta
+    Posted date:  Dec 8, 2019  5:18 PM
+  Number of letters in database: 40,663
+  Number of sequences in database:  81
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
